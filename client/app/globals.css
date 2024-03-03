@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-color-dark: #193e15;
+    --bg-color-light: #142f13;
+    --color-p-gray: #fafccc;
+    --bg-primary: #152f13;
+    --text-primary: #fafccc;
+  }
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e7c553 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #e7c553 !important;
+}
+
+.swiper-button-prev {
+  padding-right: 150px;
+}
+
+.swiper-button-next {
+  padding-left: 150px;
+}
+
+.background-image-antresol {
+  /* flex min-h-screen flex-col bg-[url('/main-background.jpg')] bg-cover bg-bottom bg-no-repeat */
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../public/assets/images/antresolIcon/background-final.webp),
+    lightgray 0px -788.889px / 100% 197.531% no-repeat;
+  @apply flex min-h-screen flex-col bg-cover bg-center bg-no-repeat;
+}
+.lazy-load-image {
+  object-fit: cover;
+}
