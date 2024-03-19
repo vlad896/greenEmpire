@@ -1,6 +1,14 @@
 'use client'
-import Header from '@/components/Header'
-import { REVIEWS_ANTRESOL } from '@/models/helper'
+import About1 from '@/components/About1'
+import Banner from '@/components/Banner'
+import CTA from '@/components/CTA'
+import Contact from '@/components/Contact'
+import FAQ from '@/components/FAQ'
+import { FooterWithSocialLinks } from '@/components/FooterWithSocialLinks'
+import LogoClouds from '@/components/LogoClouds'
+import New from '@/components/New'
+import Services from '@/components/Services'
+import { SpeedDialUi } from '@/components/SpeedDialUi'
 import { Suspense, lazy } from 'react'
 // export const metadata: Metadata = {
 //   title: {
@@ -21,41 +29,62 @@ const About = lazy(() => import('../components/About'))
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20 ">
-      <section
+    <div className="flex flex-col">
+      {/* <section
         id="main"
-        className="background-image-antresol px-5 text-[--text-primary] md:px-16 xl:px-48"
+        className="background-image-antresol px-5 text-[--text-primary] md:px-16 xl:px-44"
       >
         <Header />
+      </section> */}
+      <section>
+        <New />
       </section>
-
-      <section id="catalog">
+      <section>
         
-        <PreGallery />
       </section>
-      <section className="bg-[--bg-color-dark] pb-20">
+      <section id="catalog">
+        <About1 />
+        {/* <PreGallery /> */}
+      </section>
+      <section id="catalog">
+        <CTA />
+        {/* <PreGallery /> */}
+      </section>
+      <section className="bg-[#F8F9FF]">
         <Suspense fallback={<p>Loading....</p>}>
-          <Advantages />
+          <Services />
         </Suspense>
       </section>
       <section>
         <Suspense fallback={<p>Loading....</p>}>
-          <About />
+          {/* <About /> */}
+
+          <Advantages />
         </Suspense>
       </section>
-      <section id="reviews">
+      <section id="reviews" className="bg-white">
         <Suspense fallback={<p>Loading..</p>}>
-          <Reviews data={REVIEWS_ANTRESOL} />
+          {/* <Reviews data={REVIEWS_ANTRESOL} /> */}
+          <LogoClouds />
         </Suspense>
       </section>
-      {/* <section>
+      <section className="">
         <Suspense fallback={<p>Loading..</p>}>
-          <YouTubeLiteSwiper videos={YOUTUBE_VIDEOS} />
+          {/* <YouTubeLiteSwiper videos={YOUTUBE_VIDEOS} /> */}
+          <FAQ />
         </Suspense>
-      </section> */}
-      <section id="contacts" className="pb-16">
+      </section>
+      <section className="bg-white">
         <Suspense fallback={<p>Loading..</p>}>
-          <Footer />
+          {/* <YouTubeLiteSwiper videos={YOUTUBE_VIDEOS} /> */}
+          <Contact />
+        </Suspense>
+      </section>
+      <section id="contacts" className="pt-16 ">
+        <Suspense fallback={<p>Loading..</p>}>
+          {/* <Footer /> */}
+          <FooterWithSocialLinks />
+          <SpeedDialUi />
         </Suspense>
       </section>
     </div>

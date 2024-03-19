@@ -34,7 +34,7 @@ const Reviews = ({ data }: { data: Props[] }) => {
     <motion.div
       initial="hidden"
       whileInView={'visible'}
-      viewport={{ amount: 0.3 }}
+      viewport={{ amount: 0.3, once: true }}
       style={{ overflow: 'hidden' }}
     >
       <motion.div

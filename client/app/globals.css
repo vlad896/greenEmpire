@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --bg-color-dark: #193e15;
-    --bg-color-light: #142f13;
+    --bg-color-dark: #ffffff;
+    --bg-color-light: #ffffff;
     --color-p-gray: #fafccc;
-    --bg-primary: #152f13;
-    --text-primary: #fafccc;
+    --bg-primary: #f8f9ff;
+    --text-primary: #616476;
   }
 }
 
@@ -22,15 +22,15 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #e7c553 !important;
+  color: #f6f3e8 !important;
 }
 
 .swiper-button-prev {
-  padding-right: 150px;
+  padding-right: 15px;
 }
 
 .swiper-button-next {
-  padding-left: 150px;
+  padding-left: 15px;
 }
 
 .background-image-antresol {

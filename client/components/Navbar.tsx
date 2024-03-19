@@ -1,7 +1,5 @@
 'use client'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
-import Link from 'next/link'
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 const variants = {
@@ -10,24 +8,25 @@ const variants = {
 }
 const LinksSection = [
   {
-    title: 'Главная',
-    link: '#',
+    title: 'Услуги',
+    link: '/services',
   },
   {
-    title: 'Каталог',
-    link: '#catalog',
+    title: 'Портфолио',
+    link: '/portfolio',
   },
   {
-    title: 'Отзывы',
-    link: '#reviews',
+    title: 'О нас',
+    link: '/aboutUs',
   },
   {
-    title: 'Контакты',
-    link: '#contacts',
+    title: 'Статьи',
+    link: '/articles',
   },
+  { title: 'Контакты', link: '/contacts' },
 ]
 
-const Navbar = () => {
+const Navbar = ({ style }: { style?: string }) => {
   const [open, setOpen] = useState(false)
 
   const handleMenu = () => {
@@ -35,36 +34,25 @@ const Navbar = () => {
   }
 
   return (
-    <div className="mt-5">
-      <div className="mx-auto">
+    <div>
+      <div className="mx-auto px-96">
         <div className="flex items-center justify-between h-16">
-          <div className="hidden lg:flex items-center text-[--text-primary]">
+          {/* <div className="hidden lg:flex items-center text-[--text-primary]">
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <a
                 href="tel:+375447073636"
-                className="transition-all duration-500 rounded-lg "
+                className="transition-all duration-500 rounded-lg text-[#0027FE] font-bold"
               >
                 +375 (44) 707-36-36
               </a>
             </motion.div>
-          </div>
+          </div> */}
 
-          <div className="lg:absolute right-1/2">
+          <div className="right-1/2">
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
-              <Link href={'#'} legacyBehavior>
-                <Image
-                  src="/assets/icons/LogoAbout.webp"
-                  width={40} //60
-                  height={70}
-                  alt={'Логотип компании'}
-                  className="min-w-[50px] sm:min-w-[50px] md:min-w-[55px]"
-                  style={{
-                    maxWidth: '100%',
-                    height: 'auto',
-                    width: 'auto',
-                  }}
-                />
-              </Link>
+              <p className="transition-all duration-500 rounded-lg text-[#0027FE] text-2xl font-bold">
+                Green empire
+              </p>
             </motion.div>
           </div>
           <div className="hidden md:block">
@@ -76,7 +64,7 @@ const Navbar = () => {
                 >
                   <a
                     key={index}
-                    className="text-[--text-primary] transition-all duration-500 rounded-md text-md "
+                    className="text-[--text-primary]  font-semibold transition-all duration-500 rounded-md text-xl hover:text-[#0027FE]"
                     href={link.link}
                   >
                     {link.title}
