@@ -32,7 +32,7 @@ const Services = () => {
           Наши услуги
         </h2>
 
-        <div className="mx-auto justify-items-center grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 2xl:grid-cols-5 px-4 sm:px-6 lg:py-0  lg:px-12 xl:px-14 xl:grid-cols-5 xl:gap-x-8">
+        <div className="mx-auto justify-items-center grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 2xl:grid-cols-5 px-4 sm:px-6 lg:py-0  lg:px-4 xl:px-6 xl:grid-cols-5 xl:gap-x-5">
           <CardUI />
           <CardUI />
           <CardUI />

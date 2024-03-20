@@ -22,7 +22,7 @@ const Advantages = () => {
         initial="hidden"
         whileInView={'visible'}
         viewport={{ amount: 0.5, once: true }}
-        className="mx-auto flex flex-col px-4 sm:px-6 lg:py-0 xl:px-14 lg:px-12 "
+        className="mx-auto flex flex-col px-4 sm:px-6 lg:py-0 xl:px-6 lg:px-4 "
         style={{ overflow: 'hidden' }}
       >
         <motion.h2
@@ -33,7 +33,7 @@ const Advantages = () => {
           Почему мы?
         </motion.h2>
 
-        <div className="grid grid-cols-1  pb-28 gap-y-5 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8">
+        <div className="grid grid-cols-1  pb-28 gap-y-8  gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-5">
           {ADVANTAGES.map((a, index) => (
             <motion.div
               key={a.header}

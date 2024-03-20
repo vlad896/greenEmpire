@@ -1,6 +1,5 @@
 'use client'
 import About1 from '@/components/About1'
-import Banner from '@/components/Banner'
 import CTA from '@/components/CTA'
 import Contact from '@/components/Contact'
 import FAQ from '@/components/FAQ'
@@ -39,9 +38,7 @@ export default function Home() {
       <section>
         <New />
       </section>
-      <section>
-        
-      </section>
+      <section></section>
       <section id="catalog">
         <About1 />
         {/* <PreGallery /> */}

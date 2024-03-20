@@ -208,7 +208,7 @@ export function MegaMenuWithHover() {
       <div className="flex items-center justify-between text-[#0027FE]">
         <Typography
           as="a"
-          href="#"
+          href="/"
           variant="h4"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
