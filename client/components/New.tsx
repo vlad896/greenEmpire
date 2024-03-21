@@ -5,8 +5,7 @@ import 'swiper/css/effect-creative'
 import 'swiper/css/navigation'
 import { EffectCreative, Keyboard, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Banner from './Banner'
-import { MegaMenuWithHover } from './NavListMenu'
+import NavBar2 from './NavBar2'
 const DATA = [
   {
     src: '/assets/it/1.jpg',
@@ -31,8 +30,11 @@ const DATA = [
 const New = () => {
   return (
     <>
-      <MegaMenuWithHover />
-      <Banner />
+      {/* <MegaMenuWithHover /> */}
+
+      <NavBar2 />
+      {/* <Banner /> */}
+
       {/* <Navbar /> */}
       <Swiper
         modules={[Navigation, Keyboard, EffectCreative]}
