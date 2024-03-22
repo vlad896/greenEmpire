@@ -23,10 +23,15 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   color: #f6f3e8 !important;
+  font-size: 15px !important;
 }
 
 .swiper-button-prev {
   padding-right: 15px;
+}
+
+.swiper-navigation-size {
+  font-size: 15px;
 }
 
 .swiper-button-next {
@@ -46,4 +51,10 @@ body {
 }
 .lazy-load-image {
   object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+  /* Примерный размер для мобильных устройств, можно отрегулировать по необходимости */
+  :root {
+    --swiper-navigation-size: 20px !important; /* Уменьшаем размер стрелок навигации для мобильных устройств */
+  }
 }

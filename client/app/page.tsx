@@ -8,6 +8,7 @@ import LogoClouds from '@/components/LogoClouds'
 import New from '@/components/New'
 import Services from '@/components/Services'
 import { SpeedDialUi } from '@/components/SpeedDialUi'
+import TESTIMONIAL from '@/components/testimonial'
 import { Suspense, lazy } from 'react'
 // export const metadata: Metadata = {
 //   title: {
@@ -41,6 +42,7 @@ export default function Home() {
       <section></section>
       <section id="catalog">
         <About1 />
+        {/* <About2 /> */}
         {/* <PreGallery /> */}
       </section>
       <section id="catalog">
@@ -77,9 +79,16 @@ export default function Home() {
           <Contact />
         </Suspense>
       </section>
+      <section className="bg-white">
+        <Suspense fallback={<p>Loading..</p>}>
+          {/* <YouTubeLiteSwiper videos={YOUTUBE_VIDEOS} /> */}
+          <TESTIMONIAL />
+        </Suspense>
+      </section>
       <section id="contacts" className="pt-16 ">
         <Suspense fallback={<p>Loading..</p>}>
           {/* <Footer /> */}
+
           <FooterWithSocialLinks />
           <SpeedDialUi />
         </Suspense>

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Space_Grotesk } from 'next/font/google'
 import { Toaster } from 'react-hot-toast'
 import './globals.css'
 
@@ -8,6 +8,11 @@ const inter = Inter({ subsets: ['latin', 'cyrillic'], display: 'swap' })
 export const viewport: Viewport = {
   themeColor: '2d2d32',
 }
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-spaceGrotesk',
+  weight: ['300', '400', '500', '600', '700'],
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://antresol.org/'),
@@ -29,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={`${inter.className}  text-lg`}>
+      <body className={`${spaceGrotesk.className} text-lg`}>
         <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
         <main className="app">{children}</main>
       </body>

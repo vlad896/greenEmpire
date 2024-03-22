@@ -32,7 +32,7 @@ export function CardUI() {
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
-        <a href="#" className="inline-block">
+        <a className="inline-block">
           {/* <Button
             size="md"
             variant="outlined"

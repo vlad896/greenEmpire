@@ -18,7 +18,7 @@ export function DialogButton() {
         onClick={handleOpen}
         variant="filled"
         style={{ backgroundColor: '#005BFF' }}
-        className="flex"
+        className="flex w-52 justify-center"
       >
         Learn More
         <svg

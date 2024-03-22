@@ -3,17 +3,12 @@ import {
   Bars4Icon,
   ChevronDownIcon,
   GlobeAmericasIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  RectangleGroupIcon,
   SquaresPlusIcon,
   SunIcon,
-  TagIcon,
   UserGroupIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
+} from '@heroicons/react/20/solid'
 import {
-  Button,
   Collapse,
   IconButton,
   ListItem,
@@ -24,7 +19,15 @@ import {
   MenuList,
   Typography,
 } from '@material-tailwind/react'
+import Link from 'next/link'
 import React from 'react'
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaVk,
+} from 'react-icons/fa'
 
 interface NavItemProps {
   children: React.ReactNode
@@ -33,13 +36,7 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography
-        as="a"
-        href={href || '#'}
-        target={href ? '_blank' : '_self'}
-        variant="small"
-        className="font-medium"
-      >
+      <Typography as="a" href={href || '#'} className="font-medium">
         {children}
       </Typography>
     </li>
@@ -48,49 +45,29 @@ function NavItem({ children, href }: NavItemProps) {
 
 const navListMenuItems = [
   {
-    title: 'Products',
+    title: 'Аналитика',
     description: 'Find the perfect solution for your needs.',
     icon: SquaresPlusIcon,
   },
   {
-    title: 'About Us',
+    title: 'Стратегия',
     description: 'Meet and learn about our dedication',
     icon: UserGroupIcon,
   },
   {
-    title: 'Blog',
+    title: 'Дизайн',
     description: 'Find the perfect solution for your needs.',
     icon: Bars4Icon,
   },
   {
-    title: 'Services',
+    title: 'Разработка сайта',
     description: 'Learn how we can help you achieve your goals.',
     icon: SunIcon,
   },
   {
-    title: 'Support',
+    title: 'SMM',
     description: 'Reach out to us for assistance or inquiries',
     icon: GlobeAmericasIcon,
-  },
-  {
-    title: 'Contact',
-    description: 'Find the perfect solution for your needs.',
-    icon: PhoneIcon,
-  },
-  {
-    title: 'News',
-    description: 'Read insightful articles, tips, and expert opinions.',
-    icon: NewspaperIcon,
-  },
-  {
-    title: 'Products',
-    description: 'Find the perfect solution for your needs.',
-    icon: RectangleGroupIcon,
-  },
-  {
-    title: 'Special Offers',
-    description: 'Explore limited-time deals and bundles',
-    icon: TagIcon,
   },
 ]
 
@@ -99,8 +76,8 @@ function NavListMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg hover:bg-[#0027FE] hover:text-white">
+      <Link href={'/'} key={key}>
+        <MenuItem className="flex items-center gap-3 rounded-lg ">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2  ">
             {' '}
             {React.createElement(icon, {
@@ -108,10 +85,10 @@ function NavListMenu() {
               className: 'h-6 text-gray-900 w-6',
             })}
           </div>
-          <div>
+          <div className="">
             <Typography
-              variant="h6"
-              className="flex items-center text-sm font-bold"
+              variant="paragraph"
+              className="flex items-center text-base font-bold"
             >
               {title}
             </Typography>
@@ -123,7 +100,7 @@ function NavListMenu() {
             </Typography>
           </div>
         </MenuItem>
-      </a>
+      </Link>
     )
   )
 
@@ -137,16 +114,23 @@ function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="paragraph" className="font-semibold ">
+          <Typography as="div" variant="paragraph" className="font-semibold">
             <ListItem
-              className="flex items-center transition-none  gap-2 font-medium p-0 "
+              className="flex items-center transition-none gap-2 text-base font-medium p-0"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              style={{
+                backgroundColor: 'transparent',
+                color: 'inherit',
+                textDecoration: 'none',
+                outline: 'none',
+                border: 'none',
+              }}
             >
               Услуги
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`hidden  h-3 w-3 transition-transform lg:block ${
+                className={`hidden h-3 w-3 transition-transform lg:block ${
                   isMenuOpen ? 'rotate-180' : ''
                 }`}
               />
@@ -160,18 +144,15 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden  max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid  grid-cols-3 gap-y-2 outline-none outline-0 hover:text-[#0027FE]">
-            {renderItems}
-          </ul>
+          <ul className="grid  grid-cols-3 gap-y-2 ">{renderItems}</ul>
         </MenuList>
       </Menu>
-      <div className="block lg:hidden hover:text-[#0027FE]">
+      <div className="block lg:hidden ">
         <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
       </div>
     </React.Fragment>
   )
 }
-
 export function NavBar2() {
   const [open, setOpen] = React.useState(false)
   const [isScrolling, setIsScrolling] = React.useState(false)
@@ -200,7 +181,29 @@ export function NavBar2() {
 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+  const LinksSection = [
+    {
+      title: 'Главная',
+      link: '/',
+    },
+    {
+      title: 'О нас',
+      link: '/aboutUs',
+    },
+    {
+      title: 'Контакты',
+      link: '/contacts',
+    },
+    {
+      title: 'Наши работы',
+      link: '/portfolio',
+    },
 
+    {
+      title: 'Статьи',
+      link: '/articles',
+    },
+  ]
   return (
     <MTNavbar
       fullWidth
@@ -212,53 +215,40 @@ export function NavBar2() {
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           as="a"
-          href="https://www.material-tailwind.com"
-          target="_blank"
+          href="/"
           variant="h6"
           color={isScrolling ? 'gray' : 'white'}
         >
-          Material Tailwind
+          WebMarketingEmpire
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? 'text-gray-900' : 'text-white'
           }`}
         >
-          <NavItem>Home</NavItem>
-          <NavItem>About Us</NavItem>
-          <NavItem>Contact Us</NavItem>
-          <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-            Docs
-          </NavItem>
+          {LinksSection.map((link, index) => (
+            <NavItem key={index} href={link.link}>
+              {link.title}
+            </NavItem>
+          ))}
           <NavListMenu />
         </ul>
-        <div className="hidden gap-2 lg:flex lg:items-center">
-          <IconButton
-            variant="text"
-            color={isScrolling ? 'gray' : 'white'}
-            size="sm"
-          >
-            <i className="fa-brands fa-twitter text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? 'gray' : 'white'}
-            size="sm"
-          >
-            <i className="fa-brands fa-facebook text-base" />
-          </IconButton>
-          <IconButton
-            variant="text"
-            color={isScrolling ? 'gray' : 'white'}
-            size="sm"
-          >
-            <i className="fa-brands fa-instagram text-base" />
-          </IconButton>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? 'gray' : 'white'} size="sm">
-              Blocks
-            </Button>
-          </a>
+        <div className="hidden gap-4 lg:flex lg:items-center lg:h-fit">
+          <Link href={'/'}>
+            <FaVk color={isScrolling ? 'gray' : 'white'} size={23} />
+          </Link>
+          <Link href={'/'}>
+            <FaLinkedin color={isScrolling ? 'gray' : 'white'} size={23} />
+          </Link>
+          <Link href={'/'}>
+            <FaTwitter color={isScrolling ? 'gray' : 'white'} size={23} />
+          </Link>
+          <Link href={'/'}>
+            <FaFacebook color={isScrolling ? 'gray' : 'white'} size={23} />
+          </Link>
+          <Link href={'/'}>
+            <FaInstagram color={isScrolling ? 'gray' : 'white'} size={23} />
+          </Link>
         </div>
         <IconButton
           variant="text"
@@ -273,32 +263,33 @@ export function NavBar2() {
           )}
         </IconButton>
       </div>
+
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
-            <NavItem>Home</NavItem>
-            <NavItem>About Us</NavItem>
-            <NavItem>Contact Us</NavItem>
-            <NavItem href="https://www.material-tailwind.com/docs/react/installation">
-              Docs
-            </NavItem>
+            {LinksSection.map((link, index) => (
+              <NavItem key={index} href={link.link}>
+                {link.title}
+              </NavItem>
+            ))}
             <NavListMenu />
           </ul>
           <div className="mt-4 flex items-center gap-2">
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-twitter text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray" size="sm" className="ml-auto">
-                Blocks
-              </Button>
-            </a>
+            <Link href={'/'}>
+              <FaVk color={isScrolling ? 'gray' : 'gray'} size={23} />
+            </Link>
+            <Link href={'/'}>
+              <FaLinkedin color={isScrolling ? 'gray' : 'gray'} size={23} />
+            </Link>
+            <Link href={'/'}>
+              <FaTwitter color={isScrolling ? 'gray' : 'gray'} size={23} />
+            </Link>
+            <Link href={'/'}>
+              <FaFacebook color={isScrolling ? 'gray' : 'gray'} size={23} />
+            </Link>
+            <Link href={'/'}>
+              <FaInstagram color={isScrolling ? 'gray' : 'gray'} size={23} />
+            </Link>
           </div>
         </div>
       </Collapse>

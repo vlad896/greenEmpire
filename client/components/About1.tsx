@@ -1,5 +1,6 @@
 import { CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid'
 import { Button, Typography } from '@material-tailwind/react'
+import Image from 'next/image'
 
 const features = [
   {
@@ -33,31 +34,28 @@ export default function About1() {
                 variant="paragraph"
                 className="mt-6 text-lg leading-8 text-gray-600"
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+                Добро пожаловать в виртуальные просторы WebMarketingEmpire, где
+                каждый бит и байт пронизан страстью к инновациям и стремлением к
+                совершенству. Наша команда состоит из талантливых и преданных
+                профессионалов, которые готовы принять любой вызов и преобразить
+                его в успех. Мы не боимся экспериментировать, искать новые
+                подходы и находить нестандартные решения – ведь именно это
+                позволяет нам оставаться на переднем крае индустрии.
               </Typography>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features.map((feature) => (
-                  <div key={feature.name} className="relative">
-                    <dt className="inline font-semibold text-gray-900">
-                      {feature.name}
-                    </dt>{' '}
-                    <dd className="inline">{feature.description}</dd>
-                  </div>
-                ))}
                 <Button variant="filled" size="md" color="indigo">
-                  Подробнее
+                  Подробнее о Компании
                 </Button>
               </dl>
             </div>
           </div>
-          <img
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+
+          <Image
+            src="/assets/it-ChooseUs/programming-background-with-html.jpg"
             alt="Product screenshot"
-            className="w-[48rem] h-max rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-            width={2432}
-            height={1442}
+            className="w-[48rem] h-max rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] "
+            width={1824}
+            height={1080}
           />
         </div>
       </div>
