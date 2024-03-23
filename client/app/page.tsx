@@ -9,6 +9,7 @@ import New from '@/components/New'
 import Services from '@/components/Services'
 import { SpeedDialUi } from '@/components/SpeedDialUi'
 import TESTIMONIAL from '@/components/testimonial'
+
 import { Suspense, lazy } from 'react'
 // export const metadata: Metadata = {
 //   title: {

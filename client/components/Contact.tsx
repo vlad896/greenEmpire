@@ -1,4 +1,5 @@
 import { Button, Input, Textarea, Typography } from '@material-tailwind/react'
+import { SERVICES } from './Services'
 
 export function Contact() {
   return (
@@ -9,19 +10,19 @@ export function Contact() {
           color="blue-gray"
           className="mb-4 !text-base lg:!text-2xl"
         >
-          Customer Care
+          Забота о клиентах
         </Typography>
         <Typography
           variant="h1"
           color="blue-gray"
           className="mb-4 !text-3xl lg:!text-5xl"
         >
-          We&apos;re Here to Help
+          Мы готовы помочь
         </Typography>
         <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl !text-gray-500">
-          Whether it&apos;s a question about our services, a request for
-          technical assistance, or suggestions for improvement, our team is
-          eager to hear from you.
+          Если вы хотите задать вопрос о наших услугах, попросить технической
+          помощи или предложения по улучшению, наша команда с радостью выслушает
+          вас.
         </Typography>
         <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
           <img
@@ -30,28 +31,12 @@ export function Contact() {
             className="w-full h-full lg:max-h-[510px]"
           />
           <form action="#" className="flex flex-col gap-4 lg:max-w-4xl">
-            <Typography
-              variant="small"
-              className="text-left !font-semibold !text-gray-600"
-            >
-              Select Options for Business Engagement
-            </Typography>
             <div className="  grid grid-cols-1 gap-x-1 gap-y-2 sm:grid-cols-4 sm:max-w-full lg:grid-cols-3 xl:grid-cols-3 xl:max-w-lg">
-              <Button variant="outlined" className="max-w-full">
-                General inquiry
-              </Button>
-              <Button variant="outlined" className="max-w-full">
-                General inquiry
-              </Button>
-              <Button variant="outlined" className="max-w-full">
-                General inquiry
-              </Button>
-              <Button variant="outlined" className="max-w-full">
-                General inquiry
-              </Button>
-              <Button variant="outlined" className="max-w-full">
-                General inquiry
-              </Button>
+              {SERVICES.map((items, index) => (
+                <Button key={index} variant="outlined" className="max-w-full">
+                  {items.title}
+                </Button>
+              ))}
             </div>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
@@ -59,7 +44,7 @@ export function Contact() {
                   variant="small"
                   className="mb-2 text-left font-medium !text-gray-900"
                 >
-                  First Name
+                  Фамилия
                 </Typography>
                 <Input
                   color="gray"
@@ -81,7 +66,7 @@ export function Contact() {
                   variant="small"
                   className="mb-2 text-left font-medium !text-gray-900"
                 >
-                  Last Name
+                  Имя
                 </Typography>
                 <Input
                   color="gray"
@@ -102,7 +87,7 @@ export function Contact() {
                 variant="small"
                 className="mb-2 text-left font-medium !text-gray-900"
               >
-                Your Email
+                Ваш телефон
               </Typography>
               <Input
                 color="gray"
@@ -122,7 +107,7 @@ export function Contact() {
                 variant="small"
                 className="mb-2 text-left font-medium !text-gray-900"
               >
-                Your Email
+                Ваш Email
               </Typography>
               <Input
                 color="gray"
@@ -142,12 +127,12 @@ export function Contact() {
                 variant="small"
                 className="mb-2 text-left font-medium !text-gray-900"
               >
-                Your Message
+                Ваше сообщение
               </Typography>
               <Textarea
                 rows={6}
                 color="gray"
-                placeholder="Message"
+                placeholder="Сообщение"
                 name="message"
                 className=" border"
                 containerProps={{
@@ -157,7 +142,7 @@ export function Contact() {
               />
             </div>
             <Button className="w-full" color="gray">
-              Send message
+              Отправить
             </Button>
           </form>
         </div>

@@ -153,6 +153,29 @@ function NavListMenu() {
     </React.Fragment>
   )
 }
+export const LinksSection = [
+  {
+    title: 'Главная',
+    link: '/',
+  },
+  {
+    title: 'О нас',
+    link: '/aboutUs',
+  },
+  {
+    title: 'Контакты',
+    link: '/contacts',
+  },
+  {
+    title: 'Наши работы',
+    link: '/portfolio',
+  },
+
+  {
+    title: 'Статьи',
+    link: '/articles',
+  },
+]
 export function NavBar2() {
   const [open, setOpen] = React.useState(false)
   const [isScrolling, setIsScrolling] = React.useState(false)
@@ -181,29 +204,7 @@ export function NavBar2() {
 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-  const LinksSection = [
-    {
-      title: 'Главная',
-      link: '/',
-    },
-    {
-      title: 'О нас',
-      link: '/aboutUs',
-    },
-    {
-      title: 'Контакты',
-      link: '/contacts',
-    },
-    {
-      title: 'Наши работы',
-      link: '/portfolio',
-    },
 
-    {
-      title: 'Статьи',
-      link: '/articles',
-    },
-  ]
   return (
     <MTNavbar
       fullWidth
