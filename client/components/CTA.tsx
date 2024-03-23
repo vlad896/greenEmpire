@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <div>
       <div className="">
-        <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:px-16 md:pt-24 xl:px-20 lg:flex  2xl:px-32 lg:pt-0">
+        <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-10 sm:pt-10 shadow-2xl sm:px-8 md:pt-24 xl:px-20 lg:flex  2xl:px-32 lg:pt-0">
           <svg
             viewBox="0 0 1024 1024"
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
@@ -24,24 +24,24 @@ export default function CTA() {
               </radialGradient>
             </defs>
           </svg>
-          <div className="flex justify-center items-center py-16 gap-10">
-            <div className="w-1/2">
+          <div className=" lg:flex justify-center items-center py-16 gap-10">
+            <div className=" lg:w-1/2">
               <Image
-                className="w-[48rem] object-cover rounded-md bg-white/5 ring-1 ring-white/10"
+                className="object-cover rounded-md bg-white/5 ring-1 ring-white/10"
                 src="/assets/it-ChooseUs/d22f6fabce6ab1bb83ced8ea318a4392.jpg"
                 alt="App screenshot"
                 width={1824}
                 height={1080}
               />
             </div>
-            <div className="w-1/2 p-8">
-              <h2 className="text-3xl font-bold tracking-tight  text-white sm:text-4xl">
+            <div className=" lg:w-1/2 p-5 md:p-8">
+              <h2 className="text-3xl text-center font-bold tracking-tight  text-white sm:text-4xl">
                 Улучши свой бизнес
               </h2>
-              <h2 className="text-3xl mt-3 font-bold tracking-tight leading-loose text-white sm:text-4xl">
-                Начни зказывать у нас.
+              <h2 className="text-4xl text-center mt-3 font-bold tracking-tight leading-loose text-white sm:text-4xl">
+                Начни заказывать у нас.
               </h2>
-              <p className="mt-6 text-lg leading-8 text-gray-300 ">
+              <p className="text-justify mt-6 text-lg leading-8 text-gray-300 ">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
                 corrupti cupiditate expedita, maxime tenetur labore fuga harum
                 quidem atque, accusamus assumenda, id dolorum nemo reiciendis

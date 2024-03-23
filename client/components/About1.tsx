@@ -1,6 +1,7 @@
 import { CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid'
 import { Button, Typography } from '@material-tailwind/react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const features = [
   {
@@ -43,9 +44,11 @@ export default function About1() {
                 позволяет нам оставаться на переднем крае индустрии.
               </Typography>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                <Button variant="filled" size="md" color="indigo">
-                  Подробнее о Компании
-                </Button>
+                <Link href={'/aboutUs'}>
+                  <Button variant="filled" size="md" color="indigo">
+                    Подробнее о Компании
+                  </Button>
+                </Link>
               </dl>
             </div>
           </div>
