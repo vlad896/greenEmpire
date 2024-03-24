@@ -38,7 +38,7 @@ const currentYear = new Date().getFullYear()
 
 export function FooterWithSocialLinks() {
   return (
-    <footer className="relative w-full ">
+    <footer className="relative w-full pt-14">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography variant="h5" className="mb-6">
@@ -75,8 +75,7 @@ export function FooterWithSocialLinks() {
             variant="small"
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
           >
-            &copy; {currentYear}{' '}
-            <a href="https://material-tailwind.com/">WebMarketingEmpire</a>. Все
+            &copy; {currentYear} <Link href="/">WebMarketingEmpire</Link>. Все
             права защищены.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">

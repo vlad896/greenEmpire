@@ -78,7 +78,7 @@ function NavListMenu() {
     ({ icon, title, description }, key) => (
       <Link href={'/'} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg ">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2  ">
+          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 ">
             {' '}
             {React.createElement(icon, {
               strokeWidth: 2,
@@ -88,7 +88,7 @@ function NavListMenu() {
           <div className="">
             <Typography
               variant="paragraph"
-              className="flex items-center text-base font-bold"
+              className="flex items-center text-sm font-bold"
             >
               {title}
             </Typography>
@@ -143,8 +143,10 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden  max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid  grid-cols-3 gap-y-2 ">{renderItems}</ul>
+        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+          <div className="max-h-80 overflow-y-auto">
+            <ul className="grid grid-cols-3 gap-y-2 ">{renderItems}</ul>
+          </div>
         </MenuList>
       </Menu>
       <div className="block lg:hidden ">
@@ -171,10 +173,10 @@ export const LinksSection = [
     link: '/portfolio',
   },
 
-  {
-    title: 'Статьи',
-    link: '/articles',
-  },
+  //   {
+  //     title: 'Статьи',
+  //     link: '/articles',
+  //   },
 ]
 export function NavBar2() {
   const [open, setOpen] = React.useState(false)
@@ -267,7 +269,7 @@ export function NavBar2() {
 
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
-          <ul className="flex flex-col gap-4 text-blue-gray-900">
+          <ul className="flex flex-col gap-2 text-blue-gray-900">
             {LinksSection.map((link, index) => (
               <NavItem key={index} href={link.link}>
                 {link.title}
@@ -275,7 +277,7 @@ export function NavBar2() {
             ))}
             <NavListMenu />
           </ul>
-          <div className="mt-4 flex items-center gap-2">
+          <div className="mt-2 flex items-center gap-2">
             <Link href={'/'}>
               <FaVk color={isScrolling ? 'gray' : 'gray'} size={23} />
             </Link>

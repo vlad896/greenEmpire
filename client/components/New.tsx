@@ -6,7 +6,8 @@ import 'swiper/css/navigation'
 import { EffectCreative, Keyboard, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { DialogButton } from './DialogButton'
-import NavBar2 from './NavBar2'
+import { NavBar2 } from './NavBar2'
+
 const DATA = [
   {
     src: '/assets/it/1.jpg',
@@ -34,6 +35,7 @@ const New = () => {
       {/* <MegaMenuWithHover /> */}
 
       <NavBar2 />
+      {/* <NavBar3 /> */}
       {/* <Banner /> */}
 
       {/* <Navbar /> */}

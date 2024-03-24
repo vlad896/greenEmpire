@@ -1,11 +1,7 @@
-import {
-  Button,
-  Dialog,
-  DialogBody,
-  DialogHeader,
-} from '@material-tailwind/react'
+import { XMarkIcon } from '@heroicons/react/20/solid'
+import { Button, Dialog, DialogBody } from '@material-tailwind/react'
 import React from 'react'
-import OrderForm from './OrderForm'
+import OrderForm2 from './OrderForm2'
 
 export function DialogButton() {
   const [open, setOpen] = React.useState(false)
@@ -36,10 +32,20 @@ export function DialogButton() {
           />
         </svg>
       </Button>
-      <Dialog open={open} handler={handleOpen}>
-        <DialogHeader>Its a simple dialog.</DialogHeader>
+      <Dialog
+        open={open}
+        handler={handleOpen}
+        className=" overflow-y-scroll max-h-full relative"
+      >
         <DialogBody>
-          <OrderForm />
+          <XMarkIcon
+            strokeWidth={2}
+            className="flex justify-end h-6 w-6 cursor-pointer absolute top-2 right-2 z-10"
+            color="#000"
+            onClick={handleOpen}
+          />
+          {/* <OrderForm /> */}
+          <OrderForm2 />
         </DialogBody>
       </Dialog>
     </>

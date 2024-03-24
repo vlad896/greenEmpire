@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function CTA() {
   return (
@@ -35,10 +36,10 @@ export default function CTA() {
               />
             </div>
             <div className=" lg:w-1/2 p-5 md:p-8">
-              <h2 className="text-3xl text-center font-bold tracking-tight  text-white sm:text-4xl">
+              <h2 className="text-3xl text-center md:text-start   font-bold tracking-tight  text-white sm:text-4xl">
                 Улучши свой бизнес
               </h2>
-              <h2 className="text-4xl text-center mt-3 font-bold tracking-tight leading-loose text-white sm:text-4xl">
+              <h2 className="text-4xl text-center mt-3 md:text-start font-bold tracking-tight leading-loose text-white sm:text-4xl">
                 Начни заказывать у нас.
               </h2>
               <p className="text-justify mt-6 text-lg leading-8 text-gray-300 ">
@@ -48,18 +49,18 @@ export default function CTA() {
                 itaque? Laboriosam sequi animi quam!
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                <a
+                <Link
                   href="#"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Заказать
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-sm font-semibold leading-6 text-white"
                 >
                   Узнать больше <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -3,8 +3,11 @@ import { SERVICES } from './Services'
 
 const OrderForm = () => {
   return (
-    <form action="#" className="flex flex-col gap-4 lg:max-w-4xl">
-      <div className="  grid grid-cols-1 gap-x-1 gap-y-2 sm:grid-cols-4 sm:max-w-full lg:grid-cols-3 xl:grid-cols-3 xl:max-w-lg">
+    <form
+      action="#"
+      className="flex flex-col gap-4 lg:max-w-4xl overflow-y-auto max-h-max"
+    >
+      <div className=" grid grid-cols-1 gap-x-1 gap-y-2 sm:grid-cols-4 sm:max-w-full lg:grid-cols-3 xl:grid-cols-3 xl:max-w-lg">
         {SERVICES.map((items, index) => (
           <Button key={index} variant="outlined" className="max-w-full">
             {items.title}
