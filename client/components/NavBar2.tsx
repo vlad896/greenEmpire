@@ -45,26 +45,31 @@ function NavItem({ children, href }: NavItemProps) {
 
 const navListMenuItems = [
   {
+    href: '/analitic',
     title: 'Аналитика',
     description: 'Find the perfect solution for your needs.',
     icon: SquaresPlusIcon,
   },
   {
+    href: '/articles/analitic',
     title: 'Стратегия',
     description: 'Meet and learn about our dedication',
     icon: UserGroupIcon,
   },
   {
+    href: '/articles/analitic',
     title: 'Дизайн',
     description: 'Find the perfect solution for your needs.',
     icon: Bars4Icon,
   },
   {
+    href: '/articles/analitic',
     title: 'Разработка сайта',
     description: 'Learn how we can help you achieve your goals.',
     icon: SunIcon,
   },
   {
+    href: '/articles/analitic',
     title: 'SMM',
     description: 'Reach out to us for assistance or inquiries',
     icon: GlobeAmericasIcon,
@@ -75,8 +80,8 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description }, key) => (
-      <Link href={'/'} key={key}>
+    ({ icon, title, description, href }, key) => (
+      <Link href={href} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg ">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 ">
             {' '}

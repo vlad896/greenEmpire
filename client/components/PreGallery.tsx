@@ -1,19 +1,7 @@
 import { IMAGES_ANTRESOL } from '@/models/helper'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { MGallery } from './Gallery'
-
-const textAnimation = {
-  hidden: {
-    y: 50,
-    opacity: 0,
-  },
-  visible: (custom: number) => ({
-    y: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.1 },
-  }),
-}
+import Gallery1 from './Gallery'
 
 const featureAnimation = {
   hidden: {
@@ -29,16 +17,11 @@ const featureAnimation = {
 
 const PreGallery = () => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView={'visible'}
-      viewport={{ amount: 0.1, once: true }}
-      style={{ overflow: 'hidden' }}
-    >
+    <div style={{ overflow: 'hidden' }} className="pb-12 bg-white">
       <motion.h2
         custom={1}
         variants={featureAnimation}
-        className="text-[--text-primary] text-3xl text-center font-semibold mb-8 lg:text-4xl"
+        className="text-[--text-primary] text-3xl text-center font-semibold mb-8 mt-8 lg:text-4xl"
       >
         Наша продукция
       </motion.h2>
@@ -49,9 +32,8 @@ const PreGallery = () => {
               href={`/products/${encodeURIComponent(image.id)}`}
               key={image.id}
             >
-              <MGallery
-                custom={index + 1}
-                variants={featureAnimation}
+              <Gallery1
+                index={index}
                 id={image.id}
                 href={image.href}
                 name={image.name}
@@ -62,7 +44,7 @@ const PreGallery = () => {
           ))}
         </div>
       </div>
-      <motion.div
+      {/* <motion.div
         initial="hidden"
         whileInView={'visible'}
         viewport={{ amount: 0.5, once: true }}
@@ -81,8 +63,8 @@ const PreGallery = () => {
             Узнать стоимость
           </span>
         </motion.a>
-      </motion.div>
-    </motion.div>
+      </motion.div> */}
+    </div>
   )
 }
 
