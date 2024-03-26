@@ -3,7 +3,7 @@ import CTA from '@/components/CTA'
 import HeroPages4 from '@/components/HeroPages4'
 import PreGallery from '@/components/PreGallery'
 
-const Analitic = () => {
+const Services = () => {
   return (
     <section>
       <HeroPages4 />
@@ -15,4 +15,4 @@ const Analitic = () => {
   )
 }
 
-export default Analitic
+export default Services
