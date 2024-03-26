@@ -1,15 +1,19 @@
+// Layout.tsx
 'use client'
 import { FooterWithSocialLinks } from '@/components/FooterWithSocialLinks'
 import NavBar2 from '@/components/NavBar2'
 import { SpeedDialUi } from '@/components/SpeedDialUi'
-export default function Layout({ children }: { children: React.ReactNode }) {
+
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <section className="layout">
-      {/* <MegaMenuWithHover /> */}
+    <section>
       <NavBar2 />
+      {/* <HeroPages /> */}
       {children}
       <FooterWithSocialLinks />
       <SpeedDialUi />
     </section>
   )
 }
+
+export default Layout

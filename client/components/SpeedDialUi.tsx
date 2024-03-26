@@ -13,8 +13,14 @@ import {
   Typography,
 } from '@material-tailwind/react'
 
+interface LabelProps {
+  variant: 'small'
+  color?: 'blue-gray' // Make color optional with a question mark (?)
+  className: string
+}
+
 export function SpeedDialUi() {
-  const labelProps = {
+  const labelProps: LabelProps = {
     variant: 'small',
     color: 'blue-gray',
     className:

@@ -2,7 +2,7 @@
 
 import { Typography } from '@material-tailwind/react'
 import { motion } from 'framer-motion'
-function HeroPages() {
+function HeroPages2() {
   return (
     <div
       className={`relative min-h-screen w-full bg-[url(/assets/it-ChooseUs/close-up-side-view-smiling-businessman-eyeglasses.jpg)] bg-cover bg-no-repeat`}
@@ -36,4 +36,4 @@ function HeroPages() {
     </div>
   )
 }
-export default HeroPages
+export default HeroPages2

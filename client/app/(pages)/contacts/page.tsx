@@ -10,7 +10,7 @@ const Contacts = () => {
   return (
     <>
       <HeroPages2 />
-      <div className="py-2" id='contacts'>
+      <div className="py-2" id="contacts">
         <div className="mx-auto grid  items-center justify-items-center mr-16 mt-6 sm:px-6 lg:grid-cols-2 lg:gap-x-30 lg:px-14">
           <div className="lg:col-span-1">
             <Image
