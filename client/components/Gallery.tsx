@@ -6,16 +6,20 @@ import { Item } from 'react-photoswipe-gallery'
 
 interface Props {
   index: number
-  id: string
   href: string
-  name: string
   alt: string
   h2: string
 }
 
-const Gallery1 = ({ index, id, href, name, alt, h2 }: Props) => {
+const Gallery1 = ({ index, href, alt, h2 }: Props) => {
   return (
-    <Item key={id} original={href} thumbnail={href} width={1800} height={2300}>
+    <Item
+      key={index}
+      original={href}
+      thumbnail={href}
+      width={1800}
+      height={2300}
+    >
       {({ ref, open }) => (
         <div className="relative aspect-[18/23] grow basis-full md:basis-1/3 lg:basis-1/4">
           <motion.div

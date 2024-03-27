@@ -1,33 +1,4 @@
-export const IMAGES_ANTRESOL = [
-  {
-    id: '1',
-    href: '/assets/analitic/top-view-workmates-talking-about-bar-chart.webp',
-    name: 'ffs',
-    alt: 'ff1',
-    h2: 'Анализ компании',
-  },
-  {
-    id: '2',
-    href: '/assets/analitic/close-up-glasses-annual-summary.webp',
-    name: 'ffs',
-    alt: 'Анализ рынка',
-    h2: 'Анализ рынка',
-  },
-  {
-    id: '3',
-    href: '/assets/analitic/close-up-financial-document-table.webp',
-    name: 'ffs',
-    alt: 'Анализ конкурентов',
-    h2: 'Анализ конкурентов',
-  },
-  {
-    id: '4',
-    href: '/assets/analitic/individuality-concept-silhouettes.webp',
-    name: 'ffs',
-    alt: 'Анализ целевой аудитории',
-    h2: 'Анализ целевой аудитории',
-  },
-]
+
 export const ADVANTAGES = [
   {
     icon: '/assets/it-ChooseUs/1.svg',
