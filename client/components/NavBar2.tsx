@@ -45,31 +45,31 @@ function NavItem({ children, href }: NavItemProps) {
 
 const navListMenuItems = [
   {
-    href: '/analitic',
+    href: '/services/analitic',
     title: 'Аналитика',
     description: 'Find the perfect solution for your needs.',
     icon: SquaresPlusIcon,
   },
   {
-    href: '/articles/analitic',
+    href: '/services/strategy',
     title: 'Стратегия',
     description: 'Meet and learn about our dedication',
     icon: UserGroupIcon,
   },
   {
-    href: '/articles/analitic',
+    href: '/services/design',
     title: 'Дизайн',
     description: 'Find the perfect solution for your needs.',
     icon: Bars4Icon,
   },
   {
-    href: '/articles/analitic',
+    href: '/services/development',
     title: 'Разработка сайта',
     description: 'Learn how we can help you achieve your goals.',
     icon: SunIcon,
   },
   {
-    href: '/articles/analitic',
+    href: '/services/smm',
     title: 'SMM',
     description: 'Reach out to us for assistance or inquiries',
     icon: GlobeAmericasIcon,
