@@ -8,32 +8,42 @@ export const SERVICES = [
   {
     icon: '/assets/services/1.svg',
     title: 'Аналитика',
+    alt: 'IconAnalitic',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+    href: '/services/analitic',
   },
   {
     icon: '/assets/services/3.svg',
     title: 'Стратегия',
+    alt: 'IconStrategy',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+    href: '/services/strategy',
   },
   {
     icon: '/assets/services/2.svg',
     title: 'Дизайн',
+    alt: 'IconDesign',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+    href: '/services/design',
   },
   {
     icon: '/assets/services/4.svg',
     title: 'Разработка сайтов',
+    alt: 'IconDevelopment',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+    href: '/services/development',
   },
   {
     icon: '/assets/services/5.svg',
     title: 'SMM',
+    alt: 'IconSMM',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+    href: '/services/smm',
   },
 ]
 
@@ -52,6 +62,7 @@ const Services = () => {
               icon={items.icon}
               title={items.title}
               description={items.description}
+              href={items.href}
             />
           ))}
         </div>

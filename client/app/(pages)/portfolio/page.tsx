@@ -20,9 +20,6 @@ const Portfolio = () => {
   return (
     <div className="overflow-x-hidden">
       <HeroPages3 />
-      {/* {items.map((item, i) => (
-        <CardProfile key={i} text={item} index={i} />
-      ))} */}
       {items.map((item, index) => (
         <AlternateElement
           key={index}

@@ -46,7 +46,7 @@ const Advantages = () => {
                   <Image
                     aria-hidden="true"
                     src={a.icon}
-                    alt={''}
+                    alt={a.alt}
                     width={85}
                     height={85}
                   />

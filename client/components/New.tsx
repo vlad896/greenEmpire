@@ -10,19 +10,19 @@ import { NavBar2 } from './NavBar2'
 
 const DATA = [
   {
-    src: '/assets/it/1.jpg',
-    alt: '',
+    src: '/assets/it/1.webp',
+    alt: 'Аналитика',
     h1: 'Аналитика в маркетинге ключ к успеху вашего бизнеса',
     h2: 'В современном мире информация - это золото. Аналитика в маркетинге играет важную роль в формировании стратегии бизнеса, позволяя компаниям принимать обоснованные решения и достигать своих целей.',
   },
   {
-    src: '/assets/it/2.jpg',
-    alt: '',
+    src: '/assets/it/2.webp',
+    alt: 'Разработка лендинга',
     h1: 'Разработка лендинга',
     h2: 'Ключевой элемент успешной маркетинговой стратегии любого бизнеса, цель которого – привлечение внимания потенциальных клиентов и стимулирование их к действию: подписке, покупке, регистрации или запросу информации.',
   },
   {
-    src: '/assets/it/3.jpg',
+    src: '/assets/it/2.jpg',
     alt: '',
     h1: 'We are Creative Digital Agency That Help You to Business',
     h2: 'It is not so much for its beauty that the forest makes a claim upon men&apos;s hearts, as for that subtle something, that quality of air that emanation from old trees, that sowonderfully changes and renews a weary spirit3.',
@@ -32,14 +32,7 @@ const DATA = [
 const New = () => {
   return (
     <>
-      {/* <MegaMenuWithHover /> */}
-
       <NavBar2 />
-      {/* <NavBar3 /> */}
-      {/* <Banner /> */}
-
-      {/* <Navbar /> */}
-
       <Swiper
         modules={[Navigation, Keyboard, EffectCreative]}
         centeredSlides={true}

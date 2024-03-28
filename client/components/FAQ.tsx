@@ -10,15 +10,6 @@ const FAQ = () => {
         </Typography>
         <AccordionUI />
       </div>
-      {/* <div className="w-1/2 mx-auto">
-        <Image
-          alt=""
-          src={'/assets/it-ChooseUs/blog5eaaa5cb18719_nativemsg-faq.jpg'}
-          width={30}
-          height={39}
-          layout="responsive"
-        />
-      </div> */}
     </div>
   )
 }

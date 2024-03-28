@@ -177,11 +177,6 @@ export const LinksSection = [
     title: 'Наши работы',
     link: '/portfolio',
   },
-
-  //   {
-  //     title: 'Статьи',
-  //     link: '/articles',
-  //   },
 ]
 export function NavBar2() {
   const [open, setOpen] = React.useState(false)

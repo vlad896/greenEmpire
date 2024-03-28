@@ -1,22 +1,6 @@
-import { CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid'
 import { Button, Typography } from '@material-tailwind/react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const features = [
-  {
-    name: 'Push to deploy.',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates.',
-    description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
-  },
-]
 
 export default function About1() {
   return (
@@ -26,7 +10,7 @@ export default function About1() {
           <div className="flex items-center justify-around lg:pr-8 ">
             <div className="flex flex-col  lg:max-w-lg">
               <Typography
-                variant="h2"
+                variant="paragraph"
                 className="text-3xl font-semibold leading-7 text-indigo-600"
               >
                 О Компании
@@ -54,8 +38,8 @@ export default function About1() {
           </div>
 
           <Image
-            src="/assets/it-ChooseUs/programming-background-with-html.jpg"
-            alt="Product screenshot"
+            src="/assets/it-ChooseUs/programming-background-with-html.webp"
+            alt="About Company"
             className="w-[48rem] h-max rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] "
             width={1824}
             height={1080}

@@ -31,24 +31,14 @@ const About = lazy(() => import('../components/About'))
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* <section
-        id="main"
-        className="background-image-antresol px-5 text-[--text-primary] md:px-16 xl:px-44"
-      >
-        <Header />
-      </section> */}
       <section>
         <New />
       </section>
-      <section></section>
-      <section id="catalog">
+      <section>
         <About1 />
-        {/* <About2 /> */}
-        {/* <PreGallery /> */}
       </section>
-      <section id="catalog">
+      <section>
         <CTA />
-        {/* <PreGallery /> */}
       </section>
       <section className="bg-[#F8F9FF]">
         <Suspense fallback={<p>Loading....</p>}>
@@ -57,39 +47,31 @@ export default function Home() {
       </section>
       <section>
         <Suspense fallback={<p>Loading....</p>}>
-          {/* <About /> */}
-
           <Advantages />
         </Suspense>
       </section>
-      <section id="reviews" className="bg-white">
+      <section className="bg-white">
         <Suspense fallback={<p>Loading..</p>}>
-          {/* <Reviews data={REVIEWS_ANTRESOL} /> */}
           <LogoClouds />
         </Suspense>
       </section>
-      <section className="">
+      <section>
         <Suspense fallback={<p>Loading..</p>}>
-          {/* <YouTubeLiteSwiper videos={YOUTUBE_VIDEOS} /> */}
           <FAQ />
         </Suspense>
       </section>
       <section className="bg-white">
         <Suspense fallback={<p>Loading..</p>}>
-          {/* <YouTubeLiteSwiper videos={YOUTUBE_VIDEOS} /> */}
           <Contact />
         </Suspense>
       </section>
       <section className="bg-white">
         <Suspense fallback={<p>Loading..</p>}>
-          {/* <YouTubeLiteSwiper videos={YOUTUBE_VIDEOS} /> */}
           <TESTIMONIAL />
         </Suspense>
       </section>
-      <section id="contacts" className="pt-16 ">
+      <section className="pt-16">
         <Suspense fallback={<p>Loading..</p>}>
-          {/* <Footer /> */}
-
           <FooterWithSocialLinks />
           <SpeedDialUi />
         </Suspense>

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { DialogButton } from './DialogButton'
 
 export default function CTA() {
   return (
@@ -29,7 +30,7 @@ export default function CTA() {
             <div className=" lg:w-1/2">
               <Image
                 className="object-cover rounded-md bg-white/5 ring-1 ring-white/10"
-                src="/assets/it-ChooseUs/d22f6fabce6ab1bb83ced8ea318a4392.jpg"
+                src="/assets/it-ChooseUs/d22f6fabce6ab1bb83ced8ea318a4392.webp"
                 alt="App screenshot"
                 width={1824}
                 height={1080}
@@ -48,15 +49,15 @@ export default function CTA() {
                 quidem atque, accusamus assumenda, id dolorum nemo reiciendis
                 itaque? Laboriosam sequi animi quam!
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start font-[--font-spaceGrotesk]">
+                <DialogButton
+                  color="#fff"
+                  textColor="#000"
+                  icon={false}
+                  text="Заказать"
+                />
                 <Link
-                  href="#"
-                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Заказать
-                </Link>
-                <Link
-                  href="#"
+                  href="/services"
                   className="text-sm font-semibold leading-6 text-white"
                 >
                   Узнать больше <span aria-hidden="true">→</span>

@@ -46,6 +46,19 @@ const slugToDataMap: {
     icon: '/assets/analitic/individuality-concept-silhouettes.webp',
     text: ['', '', '', ''],
   },
+  //   Дизайн,
+  // designProducts
+  // logoDevelopment
+  // brandbookDevelopment
+  // webDesign
+
+  //РАзработка сайта
+  //   landingPage,
+  //   SEO,
+  //   contextualAdvertising,
+
+  // 	smm
+  //   brandPromotion
 }
 const Page = ({ params }: { params: { subSlug: string } }) => {
   const pageData = slugToDataMap[params.subSlug]

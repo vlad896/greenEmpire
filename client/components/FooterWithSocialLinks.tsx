@@ -21,16 +21,84 @@ const ICON = [
 
 const LINKS = [
   {
-    title: 'Product',
-    items: ['Overview', 'Features', 'Solutions', 'Tutorials'],
+    title: 'Аналитика',
+    href: '/services/analitic',
+    items: [
+      {
+        subTitle: 'Анализ компании',
+        href: '/services/analitic/companyAnalysis',
+      },
+      { subTitle: 'Анализ рынка', href: '/services/analitic/marketAnalysis' },
+      {
+        subTitle: 'Анализ конкурентов',
+        href: '/services/analitic/competitorAnalysis',
+      },
+      {
+        subTitle: 'Анализ аудитории',
+        href: '/services/analitic/targetAudienceAnalysis',
+      },
+    ],
+  },
+
+  {
+    title: 'Дизайн',
+    href: '/services/design',
+    items: [
+      {
+        subTitle: 'Дизайн печатной подукции',
+        href: '/services/design/designProducts',
+      },
+      {
+        subTitle: 'Разработка логотипа',
+        href: '/services/design/logoDevelopment',
+      },
+      {
+        subTitle: 'Разработка брендбука',
+        href: '/services/design/brandbookDevelopment',
+      },
+      {
+        subTitle: 'Web-дизайн',
+        href: '/services/design/webDesign',
+      },
+    ],
   },
   {
-    title: 'Company',
-    items: ['About us', 'Careers', 'Press', 'News'],
+    title: 'Разработка сайтов',
+    href: '/services/development',
+    items: [
+      {
+        subTitle: 'Landing page',
+        href: '/services/development/landingPage',
+      },
+      {
+        subTitle: 'SEO',
+        href: '/services/development/SEO',
+      },
+      {
+        subTitle: 'Контекстная реклама',
+        href: '/services/development/contextualAdvertising',
+      },
+    ],
   },
   {
-    title: 'Resource',
-    items: ['Blog', 'Newsletter', 'Events', 'Help center'],
+    title: 'SMM',
+    href: '/services/smm',
+    items: [
+      {
+        subTitle: 'Продвижение бренда',
+        href: '/services/smm/brandPromotion',
+      },
+    ],
+  },
+  {
+    title: 'Стратегия',
+    href: '/services/strategy',
+    items: [
+      {
+        subTitle: 'Разработка маркетинговой стратегии',
+        href: '/services/strategy/marketingStrategy',
+      },
+    ],
   },
 ]
 
@@ -45,24 +113,24 @@ export function FooterWithSocialLinks() {
             WebMarketingEmpire
           </Typography>
           <div className="grid grid-cols-3 justify-between gap-4">
-            {LINKS.map(({ title, items }) => (
+            {LINKS.map(({ title, items, href }) => (
               <ul key={title}>
                 <Typography
                   variant="small"
                   color="blue-gray"
                   className="mb-3 font-medium opacity-40"
                 >
-                  {title}
+                  <Link href={href}>{title}</Link>
                 </Typography>
-                {items.map((link) => (
-                  <li key={link}>
+                {items.map((link, index) => (
+                  <li key={index}>
                     <Typography
                       as="a"
-                      href="#"
+                      href={link.href}
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
-                      {link}
+                      {link.subTitle}
                     </Typography>
                   </li>
                 ))}
