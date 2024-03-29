@@ -1,7 +1,7 @@
 'use client'
 
 import AlternateElement from '@/components/AlternateElement'
-import HeroPages3 from '@/components/HeroPages3'
+import HeroPages4 from '@/components/HeroPages4'
 
 const Portfolio = () => {
   const items = [
@@ -19,7 +19,15 @@ const Portfolio = () => {
   ]
   return (
     <div className="overflow-x-hidden">
-      <HeroPages3 />
+      <HeroPages4
+        button="Перейти к работам"
+        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            repellat delectus adipisci maxime ex consequuntur qui harum
+            reiciendis quas distinctio. Quas aspernatur possimus dignissimos
+            voluptates reiciendis facere quo in. Vel?"
+        icon="/assets/it-ChooseUs/woman-holding-clipboard-her-coworkers.webp"
+        title="Наши работы"
+      />
       {items.map((item, index) => (
         <AlternateElement
           key={index}

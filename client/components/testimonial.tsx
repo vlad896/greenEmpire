@@ -18,8 +18,8 @@ export default function TESTIMONIAL() {
               className="mx-auto h-16 w-14 rounded-full"
               src="/assets/it-ChooseUs/SteveJobs.png"
               alt="SteveJobs"
-              width={14}
-              height={16}
+              width={1400}
+              height={1600}
             />
             <div className="mt-4 flex flex-col md:flex-row items-center justify-center space-x-3 text-base">
               <div className="font-semibold text-gray-900">

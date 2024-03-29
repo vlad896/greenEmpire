@@ -1,4 +1,3 @@
-// Layout.tsx
 'use client'
 import { FooterWithSocialLinks } from '@/components/FooterWithSocialLinks'
 import NavBar2 from '@/components/NavBar2'
@@ -8,7 +7,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <section>
       <NavBar2 />
-      {/* <HeroPages /> */}
       {children}
       <FooterWithSocialLinks />
       <SpeedDialUi />

@@ -2,14 +2,22 @@
 
 import CTA from '@/components/CTA'
 import Contact from '@/components/Contact'
-import HeroPages2 from '@/components/HeroPages2'
-import { Button, Typography } from '@material-tailwind/react'
+import HeroPages4 from '@/components/HeroPages4'
+import { Typography } from '@material-tailwind/react'
 import Image from 'next/image'
 
 const Contacts = () => {
   return (
     <>
-      <HeroPages2 />
+      <HeroPages4
+        button="Подробнее"
+        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            repellat delectus adipisci maxime ex consequuntur qui harum
+            reiciendis quas distinctio. Quas aspernatur possimus dignissimos
+            voluptates reiciendis facere quo in. Vel?"
+        icon="/assets/it-ChooseUs/close-up-side-view-smiling-businessman-eyeglasses.webp"
+        title="Наши контакты"
+      />
       <div className="py-2" id="contacts">
         <div className="mx-auto grid  items-center justify-items-center mr-16 mt-6 sm:px-6 lg:grid-cols-2 lg:gap-x-30 lg:px-14">
           <div className="lg:col-span-1">
@@ -17,7 +25,7 @@ const Contacts = () => {
               loading="lazy"
               width={510}
               height={320}
-              src="/assets/it-ChooseUs/contact.png"
+              src="/assets/it-ChooseUs/contact.webp"
               alt="Model wearing plain white basic tee."
               className="object-cover w-full"
             />
@@ -36,15 +44,6 @@ const Contacts = () => {
               perspiciatis magni aut voluptas optio odio tempora, deserunt harum
               aliquam quaerat!
             </Typography>
-            <Button
-              className="w-36"
-              variant="filled"
-              size="md"
-              color="indigo"
-              style={{ marginBottom: 10 }}
-            >
-              Подробнее
-            </Button>
           </div>
         </div>
         <CTA />

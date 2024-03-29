@@ -1,13 +1,21 @@
 'use client'
 import Content from '@/components/Content'
-import HeroPages from '@/components/HeroPages'
+import HeroPages4 from '@/components/HeroPages4'
 import { Typography } from '@material-tailwind/react'
 import Image from 'next/image'
 
 const AboutUs = () => {
   return (
     <div>
-      <HeroPages />
+      <HeroPages4
+        button="Подробнее"
+        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            repellat delectus adipisci maxime ex consequuntur qui harum
+            reiciendis quas distinctio. Quas aspernatur possimus dignissimos
+            voluptates reiciendis facere quo in. Vel?"
+        icon="/assets/it-ChooseUs/2148890074.webp"
+        title="О нашей компании"
+      />
       <div className="overflow-hidden bg-white sm:py-20">
         <div className="mx-auto  px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -36,7 +44,7 @@ const AboutUs = () => {
             </div>
 
             <Image
-              src="/assets/it-ChooseUs/business-people-having-meeting.jpg"
+              src="/assets/it-ChooseUs/business-people-having-meeting.webp"
               alt="Product screenshot"
               className="w-[48rem] h-max rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] "
               width={1824}
@@ -45,15 +53,12 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
-      {/* Наложение черного цвета сверху */}
       <div className="relative">
         <div className="relative">
-          {/* Содержимое с размытием */}
           <div className="overflow-hidden bg-black/50 py-24 sm:py-32 px-3">
             <Image
-              src="/assets/it-ChooseUs/image.png"
-              alt=""
+              src="/assets/it-ChooseUs/image.webp"
+              alt="WorkWithUs"
               width={2030}
               height={2030}
               className="absolute inset-0 -z-10 h-full w-full object-cover object-center"

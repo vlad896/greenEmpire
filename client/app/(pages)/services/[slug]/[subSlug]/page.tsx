@@ -63,7 +63,6 @@ const slugToDataMap: {
 const Page = ({ params }: { params: { subSlug: string } }) => {
   const pageData = slugToDataMap[params.subSlug]
   if (!pageData) {
-    // Если данных нет, выбрасываем ошибку 404
     return <Error404 />
   }
   const { title, desc, button, icon } = pageData

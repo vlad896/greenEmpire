@@ -21,12 +21,6 @@ const DATA = [
     h1: 'Разработка лендинга',
     h2: 'Ключевой элемент успешной маркетинговой стратегии любого бизнеса, цель которого – привлечение внимания потенциальных клиентов и стимулирование их к действию: подписке, покупке, регистрации или запросу информации.',
   },
-  {
-    src: '/assets/it/2.jpg',
-    alt: '',
-    h1: 'We are Creative Digital Agency That Help You to Business',
-    h2: 'It is not so much for its beauty that the forest makes a claim upon men&apos;s hearts, as for that subtle something, that quality of air that emanation from old trees, that sowonderfully changes and renews a weary spirit3.',
-  },
 ]
 
 const New = () => {

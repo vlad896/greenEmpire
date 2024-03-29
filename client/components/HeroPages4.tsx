@@ -18,7 +18,6 @@ function HeroPages4({
 }) {
   return (
     <div
-      //   style={{ '--image-url': `url(${icons})` }}
       style={{ backgroundImage: `url(${icon})` }}
       className={`relative min-h-screen w-full bg-[image:var(--image-url)] bg-cover bg-no-repeat`}
     >
