@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
+import { Suspense } from 'react'
 import { Toaster } from 'react-hot-toast'
 import './globals.css'
 
@@ -15,12 +16,13 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://antresol.org/'),
+  metadataBase: new URL('https://wm-empire.by/'),
   title: {
-    default: 'Antresol.bel',
-    template: '%s | Antresol.bel',
+    default: 'WebMarketing Empire',
+    template: '%s | WebMarketing Empire',
   },
-  description: 'Лучшие антресоли от поставщиков в Беларуси',
+  description:
+    'Мы предлагаем комплексные решения для бизнеса всех размеров, помогая нашим клиентам достигать новых высот.',
   verification: {
     google: 'google-site-verification=????????очважно',
   },
@@ -35,8 +37,10 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${spaceGrotesk.className} text-lg`}>
-        <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
-        <main className="app">{children}</main>
+        <Suspense fallback={<p>Loading....</p>}>
+          <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
+          <main className="app">{children}</main>
+        </Suspense>
       </body>
     </html>
   )

@@ -1,5 +1,4 @@
 'use client'
-import { FooterWithSocialLinks } from '@/components/FooterWithSocialLinks'
 import dynamic from 'next/dynamic'
 
 const DynamicImage = dynamic(() => import('next/image'))
@@ -28,7 +27,6 @@ const NotFoundPage = () => {
           посещением.
         </p>
       </div>
-      <FooterWithSocialLinks />
     </>
   )
 }

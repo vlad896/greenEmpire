@@ -38,24 +38,13 @@ body {
   padding-left: 15px;
 }
 
-/* .background-image-antresol {
-  /* flex min-h-screen flex-col bg-[url('/main-background.jpg')] bg-cover bg-bottom bg-no-repeat */
-/* background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.3) 100%
-    ),
-    url(../public/assets/images/antresolIcon/background-final.webp),
-    lightgray 0px -788.889px / 100% 197.531% no-repeat;
-  @apply flex min-h-screen flex-col bg-cover bg-center bg-no-repeat;
-} */
+
 .lazy-load-image {
   object-fit: cover;
 }
 @media only screen and (max-width: 768px) {
-  /* Примерный размер для мобильных устройств, можно отрегулировать по необходимости */
   :root {
-    --swiper-navigation-size: 20px !important; /* Уменьшаем размер стрелок навигации для мобильных устройств */
+    --swiper-navigation-size: 20px !important; 
   }
 }
 

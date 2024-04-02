@@ -10,10 +10,10 @@ function classNames(...classes: string[]) {
 
 export default function OrderForm2() {
   const [agreed, setAgreed] = useState(false)
-  const [isDialogOpen, setIsDialogOpen] = useState(false) // Предположим, что диалоговое окно изначально открыто
+  const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   const handleCloseDialog = () => {
-    setIsDialogOpen(false) // Устанавливаем состояние диалогового окна на закрытое
+    setIsDialogOpen(false)
   }
   return (
     <div className="isolate bg-white px-2 py-3 sm:py-5 lg:px-8 relative">

@@ -1,32 +1,20 @@
 'use client'
-import About1 from '@/components/About1'
-import CTA from '@/components/CTA'
-import Contact from '@/components/Contact'
-import FAQ from '@/components/FAQ'
-import { FooterWithSocialLinks } from '@/components/FooterWithSocialLinks'
-import LogoClouds from '@/components/LogoClouds'
-import New from '@/components/New'
-import Services from '@/components/Services'
-import { SpeedDialUi } from '@/components/SpeedDialUi'
-import TESTIMONIAL from '@/components/testimonial'
 
-import { Suspense, lazy } from 'react'
-// export const metadata: Metadata = {
-//   title: {
-//     absolute: 'Antresol.bel',
-//   },
-//   description: 'Лучшие антресоли от поставщиков в Беларуси',
-//   alternates: {
-//     canonical: `/`,
-//   },
-// }
+import { lazy } from 'react'
 
-const Reviews = lazy(() => import('../components/Reviews'))
-const Footer = lazy(() => import('../components/Footer'))
-const YouTubeLiteSwiper = lazy(() => import('../components/YoutubeLiteSwiper'))
-const PreGallery = lazy(() => import('../components/PreGallery'))
-const Advantages = lazy(() => import('../components/Advantages'))
-const About = lazy(() => import('../components/About'))
+const New = lazy(() => import('@/components/New'))
+const About1 = lazy(() => import('@/components/About1'))
+const CTA = lazy(() => import('@/components/CTA'))
+const Services = lazy(() => import('@/components/Services'))
+const Advantages = lazy(() => import('@/components/Advantages'))
+const LogoClouds = lazy(() => import('@/components/LogoClouds'))
+const FAQ = lazy(() => import('@/components/FAQ'))
+const Contact = lazy(() => import('@/components/Contact'))
+const TESTIMONIAL = lazy(() => import('@/components/testimonial'))
+const FooterWithSocialLinks = lazy(
+  () => import('@/components/FooterWithSocialLinks')
+)
+const SpeedDialUi = lazy(() => import('@/components/SpeedDialUi'))
 
 export default function Home() {
   return (
@@ -41,40 +29,26 @@ export default function Home() {
         <CTA />
       </section>
       <section className="bg-[#F8F9FF]">
-        <Suspense fallback={<p>Loading....</p>}>
-          <Services />
-        </Suspense>
+        <Services />
       </section>
       <section>
-        <Suspense fallback={<p>Loading....</p>}>
-          <Advantages />
-        </Suspense>
+        <Advantages />
       </section>
       <section className="bg-white">
-        <Suspense fallback={<p>Loading..</p>}>
-          <LogoClouds />
-        </Suspense>
+        <LogoClouds />
       </section>
       <section>
-        <Suspense fallback={<p>Loading..</p>}>
-          <FAQ />
-        </Suspense>
+        <FAQ />
       </section>
       <section className="bg-white">
-        <Suspense fallback={<p>Loading..</p>}>
-          <Contact />
-        </Suspense>
+        <Contact />
       </section>
       <section className="bg-white">
-        <Suspense fallback={<p>Loading..</p>}>
-          <TESTIMONIAL />
-        </Suspense>
+        <TESTIMONIAL />
       </section>
       <section className="pt-16">
-        <Suspense fallback={<p>Loading..</p>}>
-          <FooterWithSocialLinks />
-          <SpeedDialUi />
-        </Suspense>
+        <FooterWithSocialLinks />
+        <SpeedDialUi />
       </section>
     </div>
   )

@@ -30,7 +30,7 @@ const Gallery1 = ({ index, href, alt, h2 }: Props) => {
               y: 70,
             }}
             whileHover={{
-              scale: 1.1, // увеличиваем масштаб на 10% при наведении
+              scale: 1.1,
             }}
             whileInView={{
               opacity: 1,
@@ -61,18 +61,18 @@ const Gallery1 = ({ index, href, alt, h2 }: Props) => {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)', // черный цвет с прозрачностью 0.5
+                backgroundColor: 'rgba(0, 0, 0, 0.5)',
               }}
             />
             <div
               style={{
                 position: 'absolute',
-                top: '50%', // Позиционируем по центру по вертикали
-                left: '50%', // Позиционируем по центру по горизонтали
-                transform: 'translate(-50%, -50%)', // Центрируем относительно родительского контейнера
-                textAlign: 'center', // Выравниваем текст по центру
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                textAlign: 'center',
                 width: '100%',
-                color: 'white', // Цвет текста
+                color: 'white',
               }}
             >
               <h2 className="text-4xl leading-normal   font-bold mb-0 pb-1">

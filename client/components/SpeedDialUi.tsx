@@ -19,7 +19,7 @@ interface LabelProps {
   className: string
 }
 
-export function SpeedDialUi() {
+const SpeedDialUi = () => {
   const labelProps: LabelProps = {
     variant: 'small',
     color: 'blue-gray',
@@ -55,3 +55,4 @@ export function SpeedDialUi() {
     </div>
   )
 }
+export default SpeedDialUi
