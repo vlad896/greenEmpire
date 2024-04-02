@@ -2,7 +2,7 @@ import { Typography } from '@material-tailwind/react'
 import Image from 'next/image'
 import OrderForm from './OrderForm'
 
-export function Contact() {
+const Contact = () => {
   return (
     <section className="px-8 py-8 lg:py-16">
       <div className="container mx-auto text-center">

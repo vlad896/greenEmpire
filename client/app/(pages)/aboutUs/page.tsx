@@ -3,7 +3,6 @@ import Content from '@/components/Content'
 import HeroPages4 from '@/components/HeroPages4'
 import { Typography } from '@material-tailwind/react'
 import Image from 'next/image'
-
 const AboutUs = () => {
   return (
     <div>

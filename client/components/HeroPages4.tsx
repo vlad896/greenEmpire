@@ -5,7 +5,7 @@ import { Typography } from '@material-tailwind/react'
 import { motion } from 'framer-motion'
 
 import '@/app/globals.css'
-function HeroPages4({
+const HeroPages4 = ({
   title,
   desc,
   button,
@@ -15,7 +15,7 @@ function HeroPages4({
   desc?: string
   button?: string
   icon?: string
-}) {
+}) => {
   return (
     <div
       style={{ backgroundImage: `url(${icon})` }}

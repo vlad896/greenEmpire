@@ -1,10 +1,10 @@
 'use client'
 
-import CTA from '@/components/CTA'
 import Contact from '@/components/Contact'
 import HeroPages4 from '@/components/HeroPages4'
 import { Typography } from '@material-tailwind/react'
 import Image from 'next/image'
+import CTA from '../../../components/CTA'
 
 const Contacts = () => {
   return (

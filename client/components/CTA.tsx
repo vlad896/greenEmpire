@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { DialogButton } from './DialogButton'
 
-export default function CTA() {
+const CTA = () => {
   return (
     <div>
       <div className="">
@@ -70,3 +70,4 @@ export default function CTA() {
     </div>
   )
 }
+export default CTA
