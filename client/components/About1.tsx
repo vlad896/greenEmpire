@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 export default function About1() {
   return (
-    <div className="overflow-hidden bg-white sm:py-20">
+    <div className="overflow-hidden bg-white py-16">
       <div className="mx-auto  px-6 lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="flex items-center justify-around lg:pr-8 ">
             <div className="flex flex-col  lg:max-w-lg">
               <Typography
@@ -41,8 +41,9 @@ export default function About1() {
             src="/assets/it-ChooseUs/programming-background-with-html.webp"
             alt="About Company"
             className="w-[48rem] h-max rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] "
-            width={1824}
-            height={1080}
+            width={800}
+            height={800}
+            loading="lazy"
           />
         </div>
       </div>

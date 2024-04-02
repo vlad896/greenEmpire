@@ -10,7 +10,7 @@ export const SERVICES = [
     title: 'Аналитика',
     alt: 'IconAnalitic',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+      'Аналитика необходима для эффективного понимания рынка, выявления трендов, способствующих успеху вашего бизнеса.',
     href: '/services/analitic',
   },
   {
@@ -18,7 +18,7 @@ export const SERVICES = [
     title: 'Стратегия',
     alt: 'IconStrategy',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+      'Стратегия - это основа успешного бизнеса, определяющая его направление и методы для достижения максимальной эффективности.',
     href: '/services/strategy',
   },
   {
@@ -26,7 +26,7 @@ export const SERVICES = [
     title: 'Дизайн',
     alt: 'IconDesign',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+      'Дизайн - ключевой элемент, который формирует впечатление о продукте и обеспечивает его удобство использования.',
     href: '/services/design',
   },
   {
@@ -34,7 +34,7 @@ export const SERVICES = [
     title: 'Разработка сайтов',
     alt: 'IconDevelopment',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+      'Разработка сайта - создание онлайн-присутствия для вашего бренда с удобным интерфейсом и функциональностью.',
     href: '/services/development',
   },
   {
@@ -42,7 +42,7 @@ export const SERVICES = [
     title: 'SMM',
     alt: 'IconSMM',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut.',
+      'SMM - это продвижение бренда через социальные медиа с помощью контента, взаимодействия с аудиторией и рекламы..',
     href: '/services/smm',
   },
 ]
@@ -55,7 +55,7 @@ const Services = () => {
           Наши услуги
         </h2>
 
-        <div className="mx-auto justify-items-center grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 2xl:grid-cols-5 px-4 sm:px-6 lg:py-0  lg:px-4 xl:px-6 xl:grid-cols-5 xl:gap-x-5">
+        <div className="mx-auto justify-items-center grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3  2xl:grid-cols-5 px-4 sm:px-6 lg:py-0  lg:px-4 xl:px-6  xl:gap-x-5">
           {SERVICES.map((items, index) => (
             <CardUI
               key={index}

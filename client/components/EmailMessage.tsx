@@ -12,11 +12,22 @@ import {
 
 type MessageUsEmailProps = {
   name: string
+  surname: string
   phone: string
+  message: string
+  email: string
+  service: string
 }
 
-const MessageUsEmail = ({ name, phone }: MessageUsEmailProps) => {
-  const previewText = `ЗАКАЗ НА САЙТЕ ANTRESOL.ORG! СРОЧНО!`
+const MessageUsEmail = ({
+  name,
+  phone,
+  surname,
+  email,
+  message,
+  service,
+}: MessageUsEmailProps) => {
+  const previewText = `ЗАКАЗ НА САЙТЕ WM Empire! СРОЧНО!`
 
   return (
     <Html>
@@ -29,8 +40,18 @@ const MessageUsEmail = ({ name, phone }: MessageUsEmailProps) => {
               ПЕРЕЗВОНИТЬ!
             </Heading>
             <Text className="text-black text-[14px] leading-[24px]">
-              ФИО - {name}
-              Телефон - {phone}
+              Services - {service}
+              <br />
+              Surname - {surname}
+              <br />
+              Name - {name}
+              <br />
+              Email - {email}
+              <br />
+              Phone - {phone}
+              <br />
+              Message - {message}
+              <br />
             </Text>
 
             <Hr className="my-[16px] mx-0 w-full" />

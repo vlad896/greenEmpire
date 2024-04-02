@@ -36,18 +36,18 @@ const CTA = () => {
                 height={1080}
               />
             </div>
-            <div className=" lg:w-1/2 p-5 md:p-8">
+            <div className=" lg:w-1/2 pt-5 md:p-8">
               <h2 className="text-3xl text-center md:text-start   font-bold tracking-tight  text-white sm:text-4xl">
                 Улучши свой бизнес
               </h2>
-              <h2 className="text-4xl text-center mt-3 md:text-start font-bold tracking-tight leading-loose text-white sm:text-4xl">
+              <h2 className="text-2xl text-center mt-3 md:text-start font-bold sm:tracking-tight leading-loose text-white sm:text-4xl">
                 Начни заказывать у нас.
               </h2>
               <p className="text-justify mt-6 text-lg leading-8 text-gray-300 ">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-                corrupti cupiditate expedita, maxime tenetur labore fuga harum
-                quidem atque, accusamus assumenda, id dolorum nemo reiciendis
-                itaque? Laboriosam sequi animi quam!
+                Прославленные рекомендации, высшие стандарты качества, Мы
+                воплотим ваши идеи в жизнь с легкостью. Развивай свой бизнес,
+                доверься профессионалам, Наши услуги — ключ к успеху без забот и
+                проблем
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start font-[--font-spaceGrotesk]">
                 <DialogButton

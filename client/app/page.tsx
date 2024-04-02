@@ -22,7 +22,7 @@ export default function Home() {
       <section>
         <New />
       </section>
-      <section>
+      <section className="bg-white">
         <About1 />
       </section>
       <section>
@@ -35,21 +35,19 @@ export default function Home() {
         <Advantages />
       </section>
       <section className="bg-white">
-        <LogoClouds />
-      </section>
-      <section>
         <FAQ />
       </section>
-      <section className="bg-white">
+      <section>
         <Contact />
       </section>
-      <section className="bg-white">
+      <section>
         <TESTIMONIAL />
       </section>
-      <section className="pt-16">
+      <section>
         <FooterWithSocialLinks />
         <SpeedDialUi />
       </section>
     </div>
   )
 }
+// #F8F9FF

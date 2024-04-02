@@ -1,46 +1,21 @@
 import { ADVANTAGES } from '@/models/helper'
 import { Typography } from '@material-tailwind/react'
-import { motion } from 'framer-motion'
 import Image from 'next/image'
-
-const textAnimation = {
-  hidden: {
-    y: -100,
-    opacity: 0,
-  },
-  visible: (custom: number) => ({
-    y: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2 },
-  }),
-}
 
 const Advantages = () => {
   return (
     <div className="px-6">
-      <motion.div
-        initial="hidden"
-        whileInView={'visible'}
-        viewport={{ amount: 0.5, once: true }}
+      <div
         className="mx-auto flex flex-col px-4 sm:px-6 lg:py-0 xl:px-6 lg:px-4 "
         style={{ overflow: 'hidden' }}
       >
-        <motion.h2
-          custom={1}
-          variants={textAnimation}
-          className="text-[#0027FE] text-2xl pt-24 text-center font-semibold mb-9 sm:text-3xl lg:text-4xl"
-        >
+        <h2 className="text-[#0027FE] text-2xl pt-24 text-center font-semibold mb-9 sm:text-3xl lg:text-4xl">
           Почему мы?
-        </motion.h2>
+        </h2>
 
         <div className="grid grid-cols-1  pb-28 gap-y-8  gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-5">
           {ADVANTAGES.map((a, index) => (
-            <motion.div
-              key={a.header}
-              custom={index + 1}
-              variants={textAnimation}
-              className="col-span-1 "
-            >
+            <div key={a.header} className="col-span-1 ">
               <div className="min-h-full  flex flex-col rounded-2xl bg-[--bg-color-light] border-blue-700 p-5 text-center shadow-2xl shadow-indigo-500/30">
                 <div className="flex justify-center">
                   <Image
@@ -64,10 +39,10 @@ const Advantages = () => {
                   {a.text}
                 </Typography>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   )
 }

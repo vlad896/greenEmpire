@@ -12,7 +12,7 @@ const DATA = [
   {
     src: '/assets/it/1.webp',
     alt: 'Аналитика',
-    h1: 'Аналитика в маркетинге ключ к успеху вашего бизнеса',
+    h1: 'Аналитика',
     h2: 'В современном мире информация - это золото. Аналитика в маркетинге играет важную роль в формировании стратегии бизнеса, позволяя компаниям принимать обоснованные решения и достигать своих целей.',
   },
   {
@@ -58,17 +58,17 @@ const New = () => {
                 className="object-cover overflow-hidden"
               />
               <div className="absolute inset-0 grid h-full w-full  bg-[#000a40]/80">
-                <div className="container relative z-10 my-auto mx-auto grid place-items-center sm:place-items-start sm:pl-12">
+                <div className="container relative z-10 my-auto mx-auto grid place-items-center  sm:place-items-start sm:pl-12">
                   <Typography
                     variant="h1"
                     color="white"
-                    className="text-xl text-center sm:text-start  mb-6 md:mb-3 xl:mb-10  md:max-w-full xl:text-6xl xl:max-w-6xl  2xl:text-7xl"
+                    className="text-3xl sm:text-start  mb-2 md:mb-3 xl:mb-10  md:max-w-full xl:text-6xl xl:max-w-6xl  2xl:text-7xl"
                   >
                     {img.h1}
                   </Typography>
                   <Typography
                     color="white"
-                    className="mt-4 text-sm max-w-xs mb-6 xl:mb-10   md:text-lg md:max-w-full lg:max-w-3xl"
+                    className="mt-4   text-sm max-w-xs mb-6 xl:mb-10   md:text-lg md:max-w-full lg:max-w-3xl"
                   >
                     {img.h2}
                   </Typography>
