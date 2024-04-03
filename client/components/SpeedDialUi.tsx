@@ -15,7 +15,7 @@ import {
 
 interface LabelProps {
   variant: 'small'
-  color?: 'blue-gray' // Make color optional with a question mark (?)
+  color?: 'blue-gray'
   className: string
 }
 
@@ -28,9 +28,9 @@ const SpeedDialUi = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative" aria-label="кнопка быстрого доступа">
       <div className="fixed bottom-5 right-5 z-50 ">
-        <SpeedDial>
+        <SpeedDial aria-label="кнопка быстрого доступа">
           <SpeedDialHandler className="bg-[#005BFF]">
             <IconButton size="lg" className="rounded-full">
               <PlusIcon className="h-5 w-5 transition-transform group-hover:rotate-45" />

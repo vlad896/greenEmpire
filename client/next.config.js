@@ -38,13 +38,13 @@
 // 		value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
 // 	}
 // ];
-// const runtimeCaching = require("next-pwa/cache");
-// const withPWA = require('next-pwa')({
-// 	dest: 'public',
-// 	register: true,
-// 	skipWaiting: true,
-// 	runtimeCaching
-// })
+const runtimeCaching = require("next-pwa/cache");
+const withPWA = require('next-pwa')({
+	dest: 'public',
+	register: true,
+	skipWaiting: true,
+	runtimeCaching
+})
 
 // const nextConfig = {
 // 	productionBrowserSourceMaps: true,
@@ -66,8 +66,10 @@
 // module.exports = nextConfig
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-	/* config options here */
-}
+const nextConfig = withPWA({
+	compiler: {
+		styledComponents: true
+	},
+})
 
 module.exports = nextConfig

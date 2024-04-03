@@ -11,7 +11,6 @@ type FormInput = {
   phone: string
   message: string
   email: string
-  // No need for a separate 'services' field in the form data
 }
 
 const OrderForm = () => {
@@ -28,13 +27,6 @@ const OrderForm = () => {
     setSelectedService(title === selectedService ? '' : title) // Toggle selection
   }
 
-  const isValidName = (name: string) => {
-    const preValid = name.toString()
-
-    const nameRegex = /^(?![\s.]+$)[a-zA-Zа-яА-Я\s.]*$/
-    return nameRegex.test(preValid)
-  }
-
   const isValidNumber = (phone: string) => {
     const preValid = phone.toString()
 
@@ -45,12 +37,6 @@ const OrderForm = () => {
   async function onSubmit(formData: FormInput) {
     if (!selectedService) {
       toast.error('Пожалуйста, выберите услугу.')
-      return
-    }
-    const Time = new Date()
-    if (!isValidName(formData.name)) {
-      toast.error('Пожалуйста, введите корректные данные в поле с ФИО.')
-
       return
     }
     if (!isValidNumber(formData.phone)) {
@@ -67,13 +53,14 @@ const OrderForm = () => {
         surname: formData.surname,
         message: formData.message,
         email: formData.email,
-        service: selectedService, // Include selectedService here
+        service: selectedService,
       })
       toast.success('Ваше сообщение отправлено успешно')
     } catch (error) {
       toast.error('Ошибка при отправке сообщения')
     }
     reset()
+    setSelectedService('')
   }
 
   return (
@@ -86,7 +73,7 @@ const OrderForm = () => {
           <Button
             key={index}
             variant="outlined"
-            id="Servives"
+            
             type="button"
             role="button"
             className={`max-w-full ${
@@ -98,7 +85,6 @@ const OrderForm = () => {
           </Button>
         ))}
       </div>
-      {/* No need for a separate 'services' field in the form */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <Typography

@@ -33,7 +33,7 @@ export function DialogButton({
           color: textColor,
           fontWeight: 'bold',
         }}
-        className="flex w-44 sm:w-52 justify-center font-[--font-spaceGrotesk]"
+        className="flex w-44 p-2  sm:w-52 sm:p-4 justify-center font-[--font-spaceGrotesk]"
       >
         {text}
         {icon ? (

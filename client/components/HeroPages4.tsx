@@ -2,18 +2,14 @@
 
 import { Typography } from '@material-tailwind/react'
 
-import { motion } from 'framer-motion'
-
 import '@/app/globals.css'
 const HeroPages4 = ({
   title,
   desc,
-  button,
   icon = '/assets/analitic/standard-quality-control-concept-m.webp',
 }: {
   title?: string
   desc?: string
-  button?: string
   icon?: string
 }) => {
   return (
@@ -30,18 +26,10 @@ const HeroPages4 = ({
           <Typography
             variant="lead"
             color="white"
-            className="mt-4 mb-12 w-full md:max-w-full lg:max-w-3xl"
+            className="mt-7 mb-12 w-full md:max-w-full lg:max-w-3xl"
           >
             {desc}
           </Typography>
-
-          <motion.a
-            transition={{ type: 'spring', damping: 300 }}
-            href={'#contacts'}
-            className="bg-white px-5 py-2 rounded-2xl"
-          >
-            {button}
-          </motion.a>
         </div>
       </div>
     </div>

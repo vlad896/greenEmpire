@@ -6,25 +6,15 @@ import HeroPages4 from '@/components/HeroPages4'
 const Portfolio = () => {
   const items = [
     {
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero, excepturi fugit quam est sit accusantium, beatae asperiores doloribus nobis maiores libero eum earum fuga esse nesciunt magni eveniet quidem.',
-      imageSrc:
-        '/assets/Portfolio/front-view-young-women-celebrating-together.jpg',
+      text: 'Antresol.bel - это компания, которая стремится к тому, чтобы ваш дом стал идеальным местом для жизни. Они предлагают широкий ассортимент антресолей высокого качества от лучших поставщиков в Республике Беларусь.В дополнение к широкому ассортименту антресолей, они также предлагают профессиональные услуги по изготовлению и установке гардеробных купе. ',
+      imageSrc: '/assets/it-ChooseUs/opengraph-image.webp',
       isTextOnLeft: true,
-    },
-    {
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero, excepturi fugit quam est sit accusantium, beatae asperiores doloribus nobis maiores libero eum earum fuga esse nesciunt magni eveniet quidem.',
-      imageSrc: '/assets/Portfolio/colleagues-celebrating-success.jpg',
-      isTextOnLeft: false,
     },
   ]
   return (
     <div className="overflow-x-hidden">
       <HeroPages4
-        button="Перейти к работам"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            repellat delectus adipisci maxime ex consequuntur qui harum
-            reiciendis quas distinctio. Quas aspernatur possimus dignissimos
-            voluptates reiciendis facere quo in. Vel?"
+        desc="Здесь вы можете ознакомиться с нашими самыми яркими и впечатляющими проектами, которые мы реализовали с нашими партнерами. Мы гордимся каждым проектом, который мы завершили."
         icon="/assets/it-ChooseUs/woman-holding-clipboard-her-coworkers.webp"
         title="Наши работы"
       />

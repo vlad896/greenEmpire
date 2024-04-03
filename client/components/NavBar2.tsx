@@ -255,6 +255,7 @@ export function NavBar2() {
         </div>
         <IconButton
           variant="text"
+          aria-label="burgerMenu"
           color={isScrolling ? 'gray' : 'white'}
           onClick={handleOpen}
           className=" inline-block lg:hidden"
@@ -262,7 +263,11 @@ export function NavBar2() {
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
           ) : (
-            <Bars3Icon strokeWidth={2} className="h-6 w-6" />
+            <Bars3Icon
+              aria-label="burgerMenu"
+              strokeWidth={2}
+              className="h-6 w-6"
+            />
           )}
         </IconButton>
       </div>

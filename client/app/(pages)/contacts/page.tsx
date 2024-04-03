@@ -10,16 +10,12 @@ const Contacts = () => {
   return (
     <>
       <HeroPages4
-        button="Подробнее"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            repellat delectus adipisci maxime ex consequuntur qui harum
-            reiciendis quas distinctio. Quas aspernatur possimus dignissimos
-            voluptates reiciendis facere quo in. Vel?"
+        desc="Добро пожаловать в раздел контактов WebMarketing Empire! Мы всегда рады общению с нашими клиентами, партнерами и всеми, кто интересуется нашей деятельностью."
         icon="/assets/it-ChooseUs/close-up-side-view-smiling-businessman-eyeglasses.webp"
         title="Наши контакты"
       />
       <div className="py-2" id="contacts">
-        <div className="mx-auto grid  items-center justify-items-center mr-16 mt-6 sm:px-6 lg:grid-cols-2 lg:gap-x-30 lg:px-14">
+        <div className="mx-7 grid  items-center justify-items-center my-6 sm:px-6 lg:grid-cols-2 lg:gap-x-30 lg:px-14">
           <div className="lg:col-span-1">
             <Image
               loading="lazy"
@@ -30,20 +26,20 @@ const Contacts = () => {
               className="object-cover w-full"
             />
           </div>
-          <div className="flex flex-col gap-3 lg:col-span-1">
+          <div className="flex flex-col justify-center gap-3 lg:col-span-1">
             <Typography variant="h1" className="mb-3">
               Связаться с нами
             </Typography>
             <Typography variant="lead">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque et
-              maxime at illum est libero cumque id quibusdam aliquam autem
-              labore ut magnam, nihil necessitatibus aspernatur voluptas
-              exercitationem, accusamus sed. Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Commodi dolorem sint earum
-              possimus, officia veritatis libero, eius porro deleniti
-              perspiciatis magni aut voluptas optio odio tempora, deserunt harum
-              aliquam quaerat!
+              У вас есть вопросы или предложения? Не стесняйтесь связаться с
+              нами по любым вопросам, связанным с нашими продуктами, услугами
+              или сотрудничеством. Наша дружелюбная команда с удовольствием
+              поможет вам и предоставит всю необходимую информацию.
             </Typography>
+            {/* <Typography variant="paragraph">
+              У вас есть вопросы или предложения? Не стесняйтесь связаться с
+             
+            </Typography> */}
           </div>
         </div>
         <CTA />

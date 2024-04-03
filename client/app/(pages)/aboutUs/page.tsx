@@ -7,18 +7,14 @@ const AboutUs = () => {
   return (
     <div>
       <HeroPages4
-        button="Подробнее"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            repellat delectus adipisci maxime ex consequuntur qui harum
-            reiciendis quas distinctio. Quas aspernatur possimus dignissimos
-            voluptates reiciendis facere quo in. Vel?"
+        desc="Мы - команда профессионалов, соединенных общей целью: создавать инновационные решения и вдохновлять изменения. Наша история началась с момента, когда мы решили выйти за рамки обычного и стремиться к новым горизонтам."
         icon="/assets/it-ChooseUs/2148890074.webp"
         title="О нашей компании"
       />
       <div className="overflow-hidden bg-white sm:py-20">
         <div className="mx-auto  px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="flex items-center justify-around lg:pr-8 ">
+          <div className="mx-auto py-6 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div className="flex items-center  justify-around lg:pr-8 ">
               <div className="flex flex-col  lg:max-w-lg">
                 <Typography
                   variant="h2"
@@ -30,14 +26,11 @@ const AboutUs = () => {
                   variant="paragraph"
                   className="mt-6 text-lg leading-8 text-gray-600"
                 >
-                  Добро пожаловать в виртуальные просторы WebMarketingEmpire,
-                  где каждый бит и байт пронизан страстью к инновациям и
-                  стремлением к совершенству. Наша команда состоит из
-                  талантливых и преданных профессионалов, которые готовы принять
-                  любой вызов и преобразить его в успех. Мы не боимся
-                  экспериментировать, искать новые подходы и находить
-                  нестандартные решения – ведь именно это позволяет нам
-                  оставаться на переднем крае индустрии.
+                  Мы стремимся стать ведущими в своей области, предоставляя
+                  качественные продукты и услуги, которые помогают нашим
+                  клиентам достигать своих целей. Мы уверены, что инновации и
+                  творчество - ключ к успеху, и мы готовы идти вперед, чтобы
+                  создать лучшее будущее.
                 </Typography>
               </div>
             </div>
@@ -78,12 +71,11 @@ const AboutUs = () => {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0">
                 <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                  C нами так классно работать
+                  WebMarketing Empire
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-white">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  Присоединяйтесь к нам в путешествии к новым горизонтам. С нами
+                  ваш бизнес обретет надежного партнера и новые возможности.
                 </p>
               </div>
               <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
@@ -94,7 +86,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden bg-white px-6 py-12 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -126,7 +118,23 @@ const AboutUs = () => {
             />
           </svg>
         </div>
-        <Content />
+        <Content
+          icon="/assets/it-ChooseUs/people-modern-office-collaborating.webp"
+          desc2="За годы работы мы добились значительных успехов и признания в
+              своей области. Но мы не останавливаемся на достигнутом и стремимся
+              к постоянному развитию и совершенствованию."
+          desc3="Мы верим, что только через постоянные инновации и творческий
+              подход можно достичь выдающихся результатов. Мы поощряем наших
+              сотрудников к исследованию новых идей, экспериментам и поиску
+              нестандартных решений."
+          desc4="Мы берем на себя ответственность за наши действия и результаты. Мы
+              преданы нашим клиентам и партнерам, и наша цель - обеспечить им
+              качественное обслуживание и поддержку на протяжении всего
+              сотрудничества."
+          title2="Ответственность"
+          title="Наши ценности"
+          desc="Мы гордимся тем, что наша компания основана на принципах честности, инноваций и преданности нашим клиентам. Наша работа направлена на создание продуктов и услуг, которые не только удовлетворяют потребности сегодняшнего дня, но и вдохновляют нашу клиентскую базу на будущее."
+        />
       </div>
     </div>
   )

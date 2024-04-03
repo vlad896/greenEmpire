@@ -1,20 +1,18 @@
 'use client'
+import Advantages from '@/components/Advantages'
+import CTA from '@/components/CTA'
+import Contact from '@/components/Contact'
+import FAQ from '@/components/FAQ'
+import FooterWithSocialLinks from '@/components/FooterWithSocialLinks'
+import New from '@/components/New'
+import Services from '@/components/Services'
+import SpeedDialUi from '@/components/SpeedDialUi'
+import TESTIMONIAL from '@/components/testimonial'
+import dynamic from 'next/dynamic'
 
-import { lazy } from 'react'
-
-const New = lazy(() => import('@/components/New'))
-const About1 = lazy(() => import('@/components/About1'))
-const CTA = lazy(() => import('@/components/CTA'))
-const Services = lazy(() => import('@/components/Services'))
-const Advantages = lazy(() => import('@/components/Advantages'))
-const LogoClouds = lazy(() => import('@/components/LogoClouds'))
-const FAQ = lazy(() => import('@/components/FAQ'))
-const Contact = lazy(() => import('@/components/Contact'))
-const TESTIMONIAL = lazy(() => import('@/components/testimonial'))
-const FooterWithSocialLinks = lazy(
-  () => import('@/components/FooterWithSocialLinks')
-)
-const SpeedDialUi = lazy(() => import('@/components/SpeedDialUi'))
+const DynamicAbout1 = dynamic(() => import('@/components/About1'), {
+  ssr: true,
+})
 
 export default function Home() {
   return (
@@ -23,7 +21,7 @@ export default function Home() {
         <New />
       </section>
       <section className="bg-white">
-        <About1 />
+        <DynamicAbout1 />
       </section>
       <section>
         <CTA />
@@ -50,4 +48,3 @@ export default function Home() {
     </div>
   )
 }
-// #F8F9FF

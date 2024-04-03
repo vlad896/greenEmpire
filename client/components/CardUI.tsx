@@ -9,10 +9,12 @@ import Link from 'next/link'
 
 export function CardUI({
   icon,
+
   title,
   description,
   href,
 }: {
+
   icon: any
   title: string
   description: string
@@ -43,7 +45,7 @@ export function CardUI({
       </CardBody>
       <CardFooter className="pt-0">
         <Link
-          className="flex text-[10px] w-40 md:w-52 justify-center items-center md:text-xs uppercase text-white rounded-lg p-3 font-semibold bg-[#005BFF]"
+          className="flex text-[10px] w-40 md:w-52 justify-center items-center md:text-xs uppercase text-white rounded-lg p-1 md:p-3 font-semibold bg-[#005BFF]"
           href={href}
         >
           Узнать подробнее

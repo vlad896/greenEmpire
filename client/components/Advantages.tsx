@@ -9,7 +9,7 @@ const Advantages = () => {
         className="mx-auto flex flex-col px-4 sm:px-6 lg:py-0 xl:px-6 lg:px-4 "
         style={{ overflow: 'hidden' }}
       >
-        <h2 className="text-[#0027FE] text-2xl pt-24 text-center font-semibold mb-9 sm:text-3xl lg:text-4xl">
+        <h2 className="text-[#0027FE] text-3xl pt-24 text-center font-semibold mb-9 sm:text-3xl lg:text-4xl">
           Почему мы?
         </h2>
 

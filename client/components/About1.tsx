@@ -44,6 +44,7 @@ export default function About1() {
             width={800}
             height={800}
             loading="lazy"
+            fetchPriority="low"
           />
         </div>
       </div>
