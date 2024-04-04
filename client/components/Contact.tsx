@@ -9,13 +9,6 @@ const Contact = () => {
         <Typography
           variant="paragraph"
           color="blue-gray"
-          className="mb-4 !text-base lg:!text-2xl"
-        >
-          Забота о клиентах
-        </Typography>
-        <Typography
-          variant="paragraph"
-          color="blue-gray"
           className="mb-4 !text-3xl lg:!text-5xl"
         >
           Мы готовы помочь

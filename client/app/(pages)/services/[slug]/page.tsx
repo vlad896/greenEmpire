@@ -26,7 +26,7 @@ type SlugToDataMap = {
 const slugToDataMap: SlugToDataMap = {
   strategy: {
     title: 'Стратегия',
-    desc: 'Наша компания поможет создать фундамент для вашего бизнеса. Мы разрабатываем уникальные стратегии, ориентированные на достижение ваших бизнес-целей, увеличение продаж и укрепление позиций на рынке. Наш подход объединяет аналитику, креатив и оптимизацию ресурсов, чтобы вы могли не просто конкурировать, но и занимать лидирующие позиции в своей нише.',
+    desc: 'Наша компания поможет создать фундамент для вашего бизнеса. Мы разрабатываем уникальные стратегии, ориентированные на достижение ваших бизнес-целей, увеличение продаж. Наш подход объединяет аналитику, креатив и оптимизацию ресурсов, чтобы вы могли не просто конкурировать, но и занимать лидирующие позиции.',
     button: 'Подробнее',
     icon: '/assets/strategy/map-lying-wooden-table.webp',
     preGallery: [
@@ -73,7 +73,7 @@ const slugToDataMap: SlugToDataMap = {
         href: '/design/logoDevelopment',
       },
       {
-        image: '/assets/design/colorful-overloaded-bullet-journal (2).webp',
+        image: '/assets/design/colorful.webp',
         alt: 'Разработка брендбука',
         h2: 'Разработка брендбука',
         href: '/design/brandbookDevelopment',
@@ -122,7 +122,7 @@ const slugToDataMap: SlugToDataMap = {
   },
   development: {
     title: 'Разработка сайтов',
-    desc: 'Мы обеспечиваем полный цикл разработки сайтов, от концепции до запуска. Мы создаем сайты, которые не только выглядят великолепно, но и оптимизированы для привлечения и удержания клиентов. Наш подход объединяет последние тенденции веб-дизайна с продвинутыми маркетинговыми стратегиями, чтобы ваш сайт стал мощным инструментом бизнеса.',
+    desc: 'Мы обеспечиваем полный цикл разработки сайтов. Мы создаем сайты, которые не только выглядят великолепно, но и оптимизированы для привлечения клиентов. Наш подход объединяет последние тенденции веб-дизайна с маркетинговыми стратегиями, чтобы сайт стал мощным инструментом бизнеса.',
     button: 'Подробнее',
     icon: '/assets/strategy/map-lying-wooden-table.webp',
     preGallery: [
@@ -155,11 +155,11 @@ const PageServices = ({ params }: { params: { slug: string } }) => {
     // Если данных нет, выбрасываем ошибку 404
     return <Error404 />
   }
-  const { title, desc, button, icon, preGallery } = pageData
+  const { title, desc, preGallery } = pageData
   return (
     <section>
-      <HeroPages4 button={button} desc={desc} title={title} />
-      <div className="py-12 bg-white">
+      <HeroPages4 desc={desc} title={title} />
+      <div className="py-8 bg-white">
         <div className="mx-auto px-8 sm:px-6 lg:py-0 md:px-8 xl:px-28 2xl:px-48">
           <div className="grid grid-cols-2 gap-y-5 gap-x-6 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {preGallery.map((items, index) => (

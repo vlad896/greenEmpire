@@ -13,7 +13,7 @@ type FormInput = {
   email: string
 }
 
-const OrderForm = () => {
+const OrderForm = ({ onClick }: { onClick?: any }) => {
   const [selectedService, setSelectedService] = useState<string>('') // State for selected service
 
   const {
@@ -61,19 +61,19 @@ const OrderForm = () => {
     }
     reset()
     setSelectedService('')
+    onClick()
   }
 
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col gap-4 lg:max-w-4xl overflow-y-auto max-h-max"
+      className="flex flex-col gap-4 p-3 lg:max-w-4xl overflow-y-auto max-h-max"
     >
       <div className=" grid grid-cols-1 gap-x-1 gap-y-2 sm:grid-cols-4 sm:max-w-full lg:grid-cols-3 xl:grid-cols-3 xl:max-w-lg">
         {SERVICES.map((item, index) => (
           <Button
             key={index}
             variant="outlined"
-            
             type="button"
             role="button"
             className={`max-w-full ${

@@ -2,7 +2,7 @@ import { XMarkIcon } from '@heroicons/react/20/solid'
 import { Button, Dialog, DialogBody } from '@material-tailwind/react'
 import { default as Link } from 'next/link'
 import React from 'react'
-import OrderForm2 from './OrderForm2'
+import OrderForm2 from './OrderForm'
 
 export function DialogButton({
   color = '#005BFF',
@@ -71,7 +71,7 @@ export function DialogButton({
                 color="#000"
                 onClick={handleOpen}
               />
-              <OrderForm2 />
+              <OrderForm2 onClick={handleOpen} />
             </>
           )}
         </DialogBody>

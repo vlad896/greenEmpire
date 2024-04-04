@@ -2,7 +2,6 @@
 
 import FooterWithSocialLinks from '@/components/FooterWithSocialLinks'
 import NavBar2 from '@/components/NavBar2'
-import SpeedDialUi from '@/components/SpeedDialUi'
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -10,7 +9,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <NavBar2 />
       {children}
       <FooterWithSocialLinks />
-      <SpeedDialUi />
     </section>
   )
 }

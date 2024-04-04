@@ -6,7 +6,6 @@ import FAQ from '@/components/FAQ'
 import FooterWithSocialLinks from '@/components/FooterWithSocialLinks'
 import New from '@/components/New'
 import Services from '@/components/Services'
-import SpeedDialUi from '@/components/SpeedDialUi'
 import TESTIMONIAL from '@/components/testimonial'
 import dynamic from 'next/dynamic'
 
@@ -43,7 +42,6 @@ export default function Home() {
       </section>
       <section>
         <FooterWithSocialLinks />
-        <SpeedDialUi />
       </section>
     </div>
   )

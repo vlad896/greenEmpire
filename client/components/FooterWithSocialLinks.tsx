@@ -1,20 +1,10 @@
 import { Typography } from '@material-tailwind/react'
 import Link from 'next/link'
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaVk,
-} from 'react-icons/fa'
+import { FaInstagram, FaTelegram, FaViber } from 'react-icons/fa'
 
 const ICON = [
-  { icon: <FaVk />, size: 21, href: '/' },
-  { icon: <FaLinkedin />, size: 21, href: '/' },
-
-  { icon: <FaTwitter />, size: 21, href: '/' },
-
-  { icon: <FaFacebook />, size: 21, href: '/' },
+  { icon: <FaTelegram />, size: 21, href: '/' },
+  { icon: <FaViber />, size: 21, href: '/' },
 
   { icon: <FaInstagram />, size: 21, href: '/' },
 ]

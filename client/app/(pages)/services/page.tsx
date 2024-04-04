@@ -7,8 +7,7 @@ const Services = () => {
   return (
     <>
       <HeroPages4
-        button="Подробнее"
-        desc="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem architecto reprehenderit doloremque officiis ex sit. Nulla est ut"
+        desc="Раскройте потенциал вашего бизнеса с нами! В Webmarketing Empire мы предлагаем широкий спектр услуг в области цифрового маркетинга, чтобы помочь вашему бренду добиться выдающихся результатов в онлайн-мире."
         title="Наши услуги"
       />
       <div className="py-12 bg-white">

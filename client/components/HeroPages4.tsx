@@ -20,13 +20,17 @@ const HeroPages4 = ({
       <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
       <div className="grid min-h-screen px-8">
         <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-          <Typography variant="h1" color="white">
+          <Typography
+            variant="h1"
+            className="text-4xl sm:text-5xl"
+            color="white"
+          >
             {title}
           </Typography>
           <Typography
             variant="lead"
             color="white"
-            className="mt-7 mb-12 w-full md:max-w-full lg:max-w-3xl"
+            className="mt-7 mb-5 w-full md:max-w-full lg:max-w-3xl"
           >
             {desc}
           </Typography>

@@ -21,13 +21,7 @@ import {
 } from '@material-tailwind/react'
 import Link from 'next/link'
 import React from 'react'
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaVk,
-} from 'react-icons/fa'
+import { FaInstagram, FaTelegram, FaViber } from 'react-icons/fa'
 
 interface NavItemProps {
   children: React.ReactNode
@@ -238,16 +232,10 @@ export function NavBar2() {
         </ul>
         <div className="hidden gap-4 lg:flex lg:items-center lg:h-fit">
           <Link href={'/'}>
-            <FaVk color={isScrolling ? 'gray' : 'white'} size={23} />
+            <FaTelegram color={isScrolling ? 'gray' : 'white'} size={23} />
           </Link>
           <Link href={'/'}>
-            <FaLinkedin color={isScrolling ? 'gray' : 'white'} size={23} />
-          </Link>
-          <Link href={'/'}>
-            <FaTwitter color={isScrolling ? 'gray' : 'white'} size={23} />
-          </Link>
-          <Link href={'/'}>
-            <FaFacebook color={isScrolling ? 'gray' : 'white'} size={23} />
+            <FaViber color={isScrolling ? 'gray' : 'white'} size={23} />
           </Link>
           <Link href={'/'}>
             <FaInstagram color={isScrolling ? 'gray' : 'white'} size={23} />
@@ -284,16 +272,10 @@ export function NavBar2() {
           </ul>
           <div className="mt-2 flex items-center gap-2">
             <Link href={'/'}>
-              <FaVk color={isScrolling ? 'gray' : 'gray'} size={23} />
+              <FaTelegram color={isScrolling ? 'gray' : 'gray'} size={23} />
             </Link>
             <Link href={'/'}>
-              <FaLinkedin color={isScrolling ? 'gray' : 'gray'} size={23} />
-            </Link>
-            <Link href={'/'}>
-              <FaTwitter color={isScrolling ? 'gray' : 'gray'} size={23} />
-            </Link>
-            <Link href={'/'}>
-              <FaFacebook color={isScrolling ? 'gray' : 'gray'} size={23} />
+              <FaViber color={isScrolling ? 'gray' : 'gray'} size={23} />
             </Link>
             <Link href={'/'}>
               <FaInstagram color={isScrolling ? 'gray' : 'gray'} size={23} />
