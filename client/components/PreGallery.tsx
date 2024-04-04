@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Item } from 'react-photoswipe-gallery'
@@ -24,25 +23,7 @@ const PreGallery = ({ image, alt, h2, href, index }: Props) => {
         >
           {({ ref, open }) => (
             <div className="relative aspect-[15/23] grow basis-full md:basis-1/3 lg:basis-1/4">
-              <motion.div
-                className="h-full"
-                style={{ display: 'flex' }}
-                initial={{
-                  opacity: 0,
-                  y: 70,
-                }}
-                whileHover={{
-                  scale: 1.1,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 2,
-                  },
-                }}
-                viewport={{ once: true }}
-              >
+              <div className="h-full" style={{ display: 'flex' }}>
                 <div className="relative h-full flex">
                   <LazyLoadImage
                     src={image}
@@ -81,7 +62,7 @@ const PreGallery = ({ image, alt, h2, href, index }: Props) => {
                     {h2}
                   </h2>
                 </div>
-              </motion.div>
+              </div>
             </div>
           )}
         </Item>

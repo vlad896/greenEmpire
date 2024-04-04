@@ -1,11 +1,9 @@
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 function AlternateElement({
   text,
   imageSrc,
   isTextOnLeft,
-  index,
 }: {
   text: string
   imageSrc: string
@@ -13,21 +11,7 @@ function AlternateElement({
   index: number
 }) {
   return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        x: index % 2 === 0 ? 50 : -50,
-      }}
-      whileInView={{
-        opacity: 1,
-        x: 0,
-        transition: {
-          duration: 1,
-        },
-      }}
-      viewport={{ once: true }}
-      className="flex flex-col lg:flex-row items-center bg-white p-7"
-    >
+    <div className="flex flex-col lg:flex-row items-center bg-white p-7">
       {isTextOnLeft ? (
         <>
           <div className="w-full mb-5 lg:w-1/2 px-10">{text}</div>
@@ -57,7 +41,7 @@ function AlternateElement({
           <div className="w-1/2 px-10">{text}</div>
         </>
       )}
-    </motion.div>
+    </div>
   )
 }
 
