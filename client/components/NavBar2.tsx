@@ -237,7 +237,11 @@ export function NavBar2() {
           <Link href={'/'}>
             <FaViber color={isScrolling ? 'gray' : 'white'} size={23} />
           </Link>
-          <Link href={'/'}>
+          <Link
+            href={
+              'https://www.instagram.com/webmarketing.empire?igsh=cHVpbmc2Y2RiZmk1&utm_source=qr'
+            }
+          >
             <FaInstagram color={isScrolling ? 'gray' : 'white'} size={23} />
           </Link>
         </div>
@@ -277,7 +281,11 @@ export function NavBar2() {
             <Link href={'/'}>
               <FaViber color={isScrolling ? 'gray' : 'gray'} size={23} />
             </Link>
-            <Link href={'/'}>
+            <Link
+              href={
+                'https://www.instagram.com/webmarketing.empire?igsh=cHVpbmc2Y2RiZmk1&utm_source=qr'
+              }
+            >
               <FaInstagram color={isScrolling ? 'gray' : 'gray'} size={23} />
             </Link>
           </div>

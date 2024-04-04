@@ -6,7 +6,11 @@ const ICON = [
   { icon: <FaTelegram />, size: 21, href: '/' },
   { icon: <FaViber />, size: 21, href: '/' },
 
-  { icon: <FaInstagram />, size: 21, href: '/' },
+  {
+    icon: <FaInstagram />,
+    size: 21,
+    href: 'https://www.instagram.com/webmarketing.empire?igsh=cHVpbmc2Y2RiZmk1&utm_source=qr',
+  },
 ]
 
 const LINKS = [
