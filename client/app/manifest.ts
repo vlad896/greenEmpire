@@ -56,13 +56,13 @@ export default function manifest(): MetadataRoute.Manifest {
       {
         protocol: 'web+antr',
         title: 'WebMarketingEmpire',
-        url: 'http://wm-empire.by/web+antr/%s',
+        url: 'https://wm-empire.by/web+wm-empire/%s',
       },
     ],
 
     file_handlers: [
       {
-        action: 'http://wm-empire.by/',
+        action: 'https://wm-empire.by/',
         accept: [{ 'text/*': ['.txt'] }],
       },
     ],
